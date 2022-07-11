@@ -1,0 +1,131 @@
+@include list-table-column-size;
+.section-jobtitle-list{
+    // padding: 0 60px 48px;
+    @include list-scroll-webkit;
+    .row{
+        padding:0 0 48px;
+        .jobTitleBreadCrumbs{
+            @include horizontal-center;
+            p{
+                @include bread-crumbs-text;
+            }
+        }
+        .col-md-6{
+            .addModalBtn{
+                @include high-emphasize-button;
+                &:hover{
+                    @include primary-hover;
+                }
+            }
+        }
+    }
+
+    .card{
+        @include card;
+        .card-header{
+            @include card-header;
+        }
+        .card-body{
+            padding: 0;
+            @include textbox-input;
+            .jobTitle-list-header{
+                margin-top: 48px;
+                thead{
+                    border-bottom: 1px solid $text-color;
+                    th{
+                        font-family: $font-title;
+                        background-color: $primary;
+                        @include list-table-th-td;
+                    }
+                }
+            }
+            .jobTitle-list-content{
+                @include list-table-content-frame;
+                .table{
+                    td{
+                        font-family: $font-content;
+                        @include list-table-th-td;
+                        .btn{
+                            padding: 0;
+                            i{
+                                @include high-emphasize-icon;
+                                &:hover{
+                                    @include primary-hover;
+                                }
+                            }
+                            .deleteListBtn{
+                                @include less-emphasize-icon;
+                                &:hover{
+                                    @include primary-hover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .card-footer{
+            @include card-footer;
+            padding: 32px;
+        }
+    }
+}
+
+
+
+.modal{
+    background: rgba(1, 24, 66, 0.5);
+    button{
+        @include high-emphasize-button;
+        &:hover{
+            @include primary-hover;
+        }
+    }
+    .modal-content{
+        border-radius: 15px;
+        border: none;
+        .modal-header{
+            @include card-header;
+            h5{
+                @include modal-title;
+            }
+            .close{
+                @include x-modal-btn;
+            }
+        }
+        .modal-body{
+            border: none;
+            padding: 40px 32px;
+            @include textbox-input;
+            .section-job-title-modal-delete{
+                padding: 64px 32px;
+                i{
+                   @include delete-warning-icon-modal;
+                }
+                form{
+                    @include delete-warning-text-modal;
+                }
+                .deleteModalBtn{
+                    width: 112px;
+                    margin-right: 24px;
+                    @include high-emphasize-button;
+                    &:hover{
+                        @include primary-hover
+                    }
+                }
+                .cancelModalBtn{
+                    width: 112px;
+                    margin-left: 24px;
+                    @include less-emphasize-button;
+                    &:hover{
+                        @include primary-hover
+                    }
+                }
+            }
+        }
+        .modal-footer{
+            @include card-footer;
+        }
+    
+    }
+}

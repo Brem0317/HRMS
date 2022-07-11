@@ -1,0 +1,166 @@
+.section-user-list{
+    .row{
+        margin-top: 34px;
+        margin-bottom: 39px;
+    }
+    .breadCrumb{
+        font-family: $font-title;
+    }
+
+    #userAddBtn{
+        font-family: $font-title;
+        color:$primary;
+        width: 134px;
+        height: 57px;
+        background: #F1750E;
+        border-radius: 15px;
+        float:right;
+    }
+
+    .card-header{
+        font-family: $font-title;
+    }
+
+    .form-control{
+        width: 343px;
+        height: 31px;
+        border: 1px solid #001A48;
+        box-sizing: border-box;
+        border-radius: 24px;
+        float:right;
+    }
+
+    thead th{
+        font-family: $font-title;
+        font-size: 16px;
+        color: #011842;
+    }
+
+    .card-footer{
+        height: 93px;
+
+    }    
+
+
+    i{
+        color: #F1750E;
+        font-size: 32px;
+    }
+
+    .fa-toggle-on{
+        color:#0fa73a;
+        height: 24px;
+        width: 36px;
+        
+    }
+    .fa-toggle-off{
+        color:#DB0000;
+        height: 24px;
+        width: 36px;
+    }
+}
+
+#userModal{
+     
+    .modal-content{
+        width: 750px !important;
+        height: 667px !important;
+        .modal-header{
+            padding: 19px 0 19px 31px !important;
+        }
+        .modal-body{
+            padding: 40px 32px 40px 32px !important;
+        }
+        .modal-footer{
+            button{
+                width: 183px !important;
+                height: 57px !important;
+                font-size: 16px;
+                line-height: 21px;
+
+                color: #F6F6F6;
+            }
+        }
+        select{
+            height: 30px;
+            border: 1px solid #C9C9C9;
+            box-sizing: border-box;
+            border-radius: 15px;
+            font-size: 14px;
+            font-family: $font-content;
+        }
+
+        label{
+            font-size: 14px;
+        }
+
+        input{
+            height: 30px;
+            border: 1px solid #C9C9C9;
+            box-sizing: border-box;
+            border-radius: 15px;
+            font-size: 14px;
+            font-family: $font-content;
+        }
+
+        
+    }
+    
+}
+
+
+.section-user-edit{
+    .row{
+        margin:0px !important;
+    }
+    .breadcrumbs{
+        margin-top: 46px;
+        margin-bottom: 60px;
+        font-family: $font-title;
+        font-size: 18px;
+        color: #011842;
+    }
+
+    .card-header{
+        font-family: $font-title; 
+        font-size: 16px;  
+        color: #011842;
+    }
+
+    .card-body{
+        font-family: $font-content; 
+        font-size: 14px;  
+        color: #011842;
+
+        input{            
+            border: 1px solid #C9C9C9;
+            box-sizing: border-box;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+
+        select{
+            border: 1px solid #C9C9C9;
+            box-sizing: border-box;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+    }
+
+    .card-footer{
+        padding: 0px !important;
+        .btn{
+            align-items: flex-start;
+            float:right;
+            margin:18px 32px 18px !important;
+            padding: 18px 64px;
+            width: 182px;
+            height: 57px;
+            background: $accent;
+            color:$primary;
+            border-radius: 15px;
+            font-family: $font-title; 
+            font-size: 16px; 
+        }
+    }
+}

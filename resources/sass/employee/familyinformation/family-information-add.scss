@@ -1,0 +1,413 @@
+.section-employee-information-add {
+    @include list-scroll-webkit;
+
+    .breadcrumbs {
+        font-family: $font-title;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #011842;
+        line-height: 55px;
+
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .card {
+        background: $primary;
+        box-shadow: 0px 4px 30px rgba(2, 100, 136, 0.2);
+        border-radius: 15px;
+        width: 100%;
+        border: none;
+        overflow: hidden;
+        height: 695px;
+
+        .card-header {
+            height: 52px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background: #f6f6f6;
+            color: #8c8c8c;
+            border: none;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+
+            .section-card-nav {
+                height: 52px;
+                font-family: $font-content;
+                .col-md-1 {
+                    height: 52px;
+                    a {
+                        margin-top: 9px;
+                        font-size: 14px;
+                        height: 42px !important;
+                        width: 124px;
+                    }
+                }
+            }
+            .active {
+                color: $accent;
+                border-bottom: 2px solid $accent;
+                border-radius: 0;
+            }
+        }
+
+        .card-body {
+            padding: 40px 32px;
+            height: 540px;
+            overflow: auto;
+
+            // Spouse
+            .col-md-12 {
+                padding: 0;
+                .spouse-div {
+                    border-bottom: 2px solid $accent;
+                    label {
+                        font-size: 18px;
+                        font-family: $font-title;
+                        color: #011842;
+                    }
+                }
+                .spouse-row-first {
+                    display: flex;
+                    flex-direction: row;
+                    .col-md-2 {
+                        padding: 0;
+                        padding-top: 32px;
+                        font-size: 14px;
+                        font-family: $font-content;
+                        margin-right: 44px;
+
+                        label {
+                            color: #011842;
+                        }
+
+                        input,
+                        select {
+                            width: 100%;
+                            height: 30px;
+                            border-radius: 15px;
+                            padding: 7px 14px 6px;
+                            border: 1px solid #c9c9c9;
+                        }
+                    }
+                }
+
+                .spouse-row-second {
+                    @extend .spouse-row-first;
+                    .col-md-7 {
+                        padding: 0;
+                        padding-top: 32px;
+                        font-size: 14px;
+                        font-family: $font-content;
+                        margin-right: 44px;
+
+                        label {
+                            color: #011842;
+                        }
+                        input {
+                            width: 96%;
+                            height: 30px;
+                            border-radius: 15px;
+                            padding: 7px 14px 6px;
+                            border: 1px solid #c9c9c9;
+                        }
+                    }
+                }
+            }
+
+            // Father
+            .father-col-md {
+                padding-top: 40px;
+
+                .father-div {
+                    border-bottom: 2px solid $accent;
+                    label {
+                        font-size: 18px;
+                        font-family: $font-title;
+                        color: #011842;
+                    }
+                }
+                .father-row {
+                    display: flex;
+                    flex-direction: row;
+
+                    .col-md-2 {
+                        padding: 0;
+                        padding-top: 32px;
+                        font-size: 14px;
+                        font-family: $font-content;
+                        margin-right: 44px;
+
+                        label {
+                            color: #011842;
+                        }
+
+                        input,
+                        select {
+                            width: 100%;
+                            height: 30px;
+                            border-radius: 15px;
+                            padding: 7px 14px 6px;
+                            border: 1px solid #c9c9c9;
+                        }
+                    }
+                }
+            }
+
+            // Mother
+            .mother-col-md {
+                padding-top: 40px;
+
+                .mother-div {
+                    border-bottom: 2px solid $accent;
+                    label {
+                        font-size: 18px;
+                        font-family: $font-title;
+                        color: #011842;
+                    }
+                }
+
+                .mother-row {
+                    display: flex;
+                    flex-direction: row;
+
+                    .col-md-2 {
+                        padding: 0;
+                        padding-top: 32px;
+                        font-size: 14px;
+                        font-family: $font-content;
+                        margin-right: 44px;
+
+                        label {
+                            color: #011842;
+                        }
+
+                        input {
+                            width: 100%;
+                            height: 30px;
+                            border-radius: 15px;
+                            padding: 7px 14px 6px;
+                            border: 1px solid #c9c9c9;
+                        }
+                    }
+                }
+            }
+
+            // Children
+            .children-col-md {
+                padding-top: 40px;
+
+                .children-div {
+                    border-bottom: 2px solid $accent;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    label {
+                        font-size: 18px;
+                        font-family: $font-title;
+                        color: #011842;
+                    }
+
+                    .children-btn {
+                        margin-bottom: 16px;
+
+                        button {
+                            font-size: 16px;
+                            font-family: $font-content;
+                            font-weight: 500;
+                            padding: 18px 28px;
+                            border-radius: 16px;
+                            background: $accent;
+                            color: $primary;
+                            border: 1px solid $accent;
+                        }
+                    }
+                }
+
+                .children-row {
+                    .noRecords {
+                        margin-top: 37px;
+                    }
+                    table {
+                        thead {
+                            tr {
+                                th {
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    font-family: Roboto Slab;
+                                    color: #011842;
+                                    padding-top: 43px;
+                                    padding-bottom: 26px;
+                                    border-bottom: 1px solid #011842;
+                                }
+                            }
+                        }
+
+                        tbody {
+                            tr {
+                                td {
+                                    font-family: Montserrat;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    color: #011842;
+                                    border-bottom: 1px solid #011842;
+                                    padding: 11px;
+                                    vertical-align: middle;
+
+                                    .editBtn {
+                                        width: 32px;
+                                        height: 32px;
+                                        background: #f1750e;
+                                        color: #fff;
+                                        border: none;
+                                        border-radius: 5px;
+                                    }
+
+                                    .deleteBtn {
+                                        width: 32px;
+                                        height: 32px;
+                                        background: #fce3cf;
+                                        color: rgba(241, 117, 14, 0.8);
+                                        border: none;
+                                        border-radius: 5px;
+                                        margin-left: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .card-footer {
+            height: 93px;
+            border: none;
+            button {
+                width: 94px;
+                height: 56px;
+                padding: 18px 28px;
+                border-radius: 15px;
+                background: $accent;
+                color: $primary;
+            }
+        }
+    }
+
+    // Add Children Modal
+    .modal-content {
+        width: 750px;
+        .modal-body {
+            width: 750px;
+
+            .addmorefieldDiv {
+                button {
+                    padding: 13px;
+                    font-size: 14px;
+                }
+            }
+
+            .form-row {
+                justify-content: center;
+                width: 100%;
+
+                .nameDiv {
+                    padding-right: 22px;
+                }
+                .dateOfBirthDiv {
+                    padding-left: 22px;
+                }
+            }
+
+            input {
+                width: 100%;
+                height: 30px;
+                border: 1px solid #c9c9c9;
+                box-sizing: border-box;
+            }
+        }
+
+        .modal-footer {
+            .closeChildrenModal {
+                background: #fce3cf;
+                color: $accent;
+            }
+        }
+    }
+
+    #deleteChildrenModal {
+        .modal-content {
+            position: absolute;
+            width: 700px;
+            height: 471.58px;
+            border-radius: 15px;
+
+            .warning-logo {
+                i {
+                    position: relative;
+                    font-size: 66px;
+                    left: 19.813rem;
+                    top: 5.718rem;
+                    color: $accent;
+                }
+            }
+
+            #childrenDivNameModal {
+                position: relative;
+                font-family: $font-content;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 37px;
+                text-align: center;
+                top: 8.15rem;
+                left: 12.563rem;
+                color: #011842;
+                width: 18.625rem;
+
+                span {
+                    color: $accent;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                }
+            }
+
+            .deleteBtns {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                width: 272px;
+                height: 56px;
+                position: relative;
+                top: 10.215rem;
+                left: 14.375rem;
+
+                #childrenDeleteBtn {
+                    padding: 18px 42px;
+                    position: relative;
+                    background: $accent;
+                    color: #fff;
+                    font-size: 16px;
+                    font-family: $font-content;
+                    font-weight: 500;
+                    line-height: 19.5px;
+                    margin: 0 10px;
+                    border-radius: 15px;
+                }
+
+                #childrenCancelBtn {
+                    @extend #positionDeleteBtn;
+                    padding: 18px 28px;
+                    background: #fce3cf;
+                    color: $accent;
+                }
+            }
+        }
+    }
+}

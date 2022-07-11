@@ -1,0 +1,159 @@
+.section-questionaire-add {
+    
+    .card-header {
+        padding: 0 !important;
+    }
+
+    .fixHeight {
+        margin: 2% 0;
+    }
+
+    form {
+        color: #011842;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        font-family: $font-content;
+
+        .footerBtn {
+            position: absolute;
+            right: 15px;
+            bottom: -125px;
+        }
+
+        .singleQuestion {
+            margin-bottom: 30px;
+            padding: 0;
+            width: 100%;
+            
+            .singleChoice {
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+                padding-right: 40px;
+
+                label {
+                    display: inline-block;
+                    cursor: pointer;
+                    margin-right: 40px;
+                    vertical-align: text-top;
+                    line-height: 14px;
+                    font-size: 14px;
+                    padding-left: 20px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    
+                    input[type="radio"] {
+                        margin-right: 10px;
+                        vertical-align: top;
+                    }
+                }
+
+                p {
+                    margin-bottom: 5px;
+                }
+
+                .qdetails {
+                    margin-bottom: 0;
+                    margin-top: 10px;
+                    padding-left: 20px;
+                }
+
+                .qdetailInput {
+                    width: 300px;
+                    margin-left: 20px;
+                }
+                
+                .qextradetail {
+                    margin-left: 30px;
+                }
+            }    
+
+            h5 {
+                font-weight: 700;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                font-size: 16px;
+            }
+
+            input[type="text"],
+            input[type="date"] {
+                border: none;
+                width: 95%;
+                border-bottom: 1px solid #011842;
+                outline: none;  
+                font-style: italic;
+                color: #8C8C8C;
+                font-size: 14px;
+                margin-left: 20px;
+            }
+
+            input[type="text"]:focus,
+            input[type="date"]:focus {
+                font-style: normal;
+                color: #011842;
+            }
+
+            
+            &:nth-of-type(1) {
+
+                .singleChoice {
+                    
+                    &:nth-of-type(1) {
+                        width: 25%;
+                        margin-left: 20px;
+                    }
+
+                    &:nth-of-type(2) {
+                        width: 48%;
+                        padding-right: 0;
+                    }
+                }
+            }
+
+            &:nth-of-type(2),
+            &:nth-of-type(5) {
+                
+                .singleChoice {
+                    
+                    &:nth-of-type(1) {
+                        width: 45%;                
+                    }
+
+                    &:nth-of-type(2) {
+                        width: 54%;
+                        padding-right: 0;
+                    }
+                }
+            }
+
+            
+            &:nth-of-type(7) {
+                
+                .singleChoice {
+                    width: 33%;
+                    padding-left: 20px;
+
+                    &:nth-of-type(3) {
+                        width: 31%;
+                        padding-right: 0;
+                    }
+                }
+
+            }
+
+            &:nth-of-type(8) {
+
+                .singleChoice {
+                    width: 100%;
+
+                    p {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

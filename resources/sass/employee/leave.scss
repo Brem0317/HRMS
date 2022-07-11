@@ -1,0 +1,410 @@
+
+@mixin inputSearch {
+    position: absolute;
+    width: 345px;
+    right: 30px;
+}
+
+@mixin tableList {
+    tr {
+
+        td {
+            line-height: 35px;
+
+            a {                        
+                text-decoration: none;
+                color: #011842;
+                
+                &:hover {
+                    color: $accent;
+                    transition: all 0.2s ease;
+                }
+            }
+
+            &:last-child a {
+                @include genBttn;
+                padding: 7px;
+                border-radius: 5px;                        
+            }
+            
+        }             
+    }
+}
+
+@mixin fixHeight {    
+    margin: 0;
+    width: 100%;
+    padding: 30px;
+    height: 45vh;
+    margin-bottom: 5%;
+}
+
+@mixin selectArrow {
+    appearance: none;
+    cursor: pointer;
+    background-image:
+        linear-gradient(45deg, transparent 50%, #aaa 50%),
+        linear-gradient(135deg, #aaa 50%, transparent 50%);
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        100% 0;
+    background-size: 5px 5px, 5px 5px, 0;
+    background-repeat: no-repeat;
+
+    &:focus {
+        background-image:
+            linear-gradient(45deg, #aaa 50%, transparent 50%),
+            linear-gradient(135deg, transparent 50%, #aaa 50%);
+        background-position:
+            calc(100% - 15px) 1em,
+            calc(100% - 20px) 1em,
+            100% 0;
+        background-size:
+            5px 5px,
+            5px 5px,
+            2.5em 2.5em;
+        background-repeat: no-repeat;
+        border-color: grey;
+        outline: 0;
+    }
+}
+
+@mixin attachedImage {
+    display: table-caption;
+    border: 1px dashed $accent;
+    border-radius: 5px;
+    padding: 10px;
+    opacity: 0.6;
+    
+    &:hover {
+        transition: all 0.5s ease;
+        opacity: 1;
+    }
+}
+
+.noRecords {
+    font-family: $font-content;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+.section-leave-add {
+
+    .inputSearch {
+        @include inputSearch;
+        top: -65px;
+        right: 10px;
+    }
+
+    .fixHeight {
+        @include fixHeight;
+        padding: 30px 0;
+
+        table {
+            @include tableList;
+        }
+    }
+
+    .card {
+        
+        .card-header {
+            padding: 18px 30px;
+        }
+    }
+
+
+    .rightForm {
+        position: absolute;
+        background: #EFFAFE;
+        top: -80px;
+        width: 98.6%;
+        min-height: 59.5vh;
+        border-radius: 0 15px 15px 0;
+        
+        .rightTop {
+            padding: 16px 30px;
+            background: #CDF1FE;
+            border-radius: 0 15px 0 0;
+
+            h4 {
+                font-family: $font-title;
+                color: #011842;
+                font-size: 18px;
+                margin: 0;
+                line-height: 28px;
+            }
+        }
+
+        .rightBody {
+            padding: 15px 30px;
+            
+            form {
+                
+                .formDiv {
+                    float: left;
+                    margin-top: 3%;
+                }
+
+                label {
+                    font-size: 14px;
+                    margin-bottom: 8px;
+                }
+
+                label,
+                input,
+                textarea,
+                select {
+                    width: 100%;
+                    display: block;
+                    line-height: 17px;
+                    font-family: $font-content;
+                }
+
+                input,
+                option,
+                textarea,
+                select {
+                    @include inputText;
+                    font-size: 14px;
+                    font-style: normal;
+                }
+
+                textarea {
+                    min-height: 130px;
+                }
+
+                input[type="file"] {
+                    border: none;
+                    border-radius: 0;                  
+                }
+
+                input[type="date"] {
+                    cursor: pointer;
+                }
+                
+                select {
+                    @include selectArrow;
+                }
+
+                .fileUpload::-webkit-file-upload-button {
+                    visibility: hidden;
+
+                    &::after {
+                        visibility: hidden;
+                    }
+                }
+                
+                .fileUpload::before {
+                    content: 'Attach File';
+                    background: #CDF1FE;
+                    border: 1px dashed $accent;
+                    box-sizing: border-box;
+                    border-radius: 15px;
+                    font-size: 14px;
+                    font-family: $font-content;
+                    color: $accent;
+                    padding: 8px 20px;
+                    cursor: pointer;
+                    margin-right: -88px;
+                    display: inline-block;                    
+                    outline: none;
+                    white-space: nowrap;                    
+                    text-shadow: 1px 1px #fff;            
+                    width: 116px;
+
+                    
+                }
+                
+                .fileUpload:hover::before {
+                    border: 1px dashed #011842;
+                }
+
+                .form-group {
+                    margin-bottom: 35px;
+                }
+            }
+
+            button {
+                position: absolute;
+                bottom: 30px;
+                right: 50px;
+            }
+        }
+    }
+
+}
+
+.section-leave-list {
+
+    .inputSearch {
+        @include inputSearch;
+        top: 13px;
+    }
+    
+    .fixHeight {
+        @include fixHeight;
+
+        table {
+            @include tableList;
+            
+            tr {
+                td {
+                    &.pending {
+                        color: $pending;
+                    }
+                    &.approved {
+                        color: $approved;
+                    }
+                    &.declined {
+                        color: $declined;
+                    }
+                }
+
+                .attachedFileImage {
+                    @include attachedImage;
+                    padding: 3px;
+
+                    img {
+                        width: 32px;
+                        height: 32px;
+                        display: block;
+                    }
+                }
+            }
+        }       
+    }
+}
+
+.section-leave-edit {
+    form {
+
+        .formDiv {
+            float: left;
+            font-family: $font-content;
+            font-size: 14px;
+            
+            table {
+
+                tr {        
+                    th {
+                        font-family: $font-content;
+                        font-size: 14px;                        
+                        
+                        &:last-child {
+                            text-align: center;
+                            width: 250px;
+                        }
+                    }
+                    
+                    td {
+                        border-bottom: none;
+                        font-family: $font-content;
+                        font-size: 14px;
+                    }
+                }                
+            }
+        }
+
+        input::placeholder {
+            z-index: 3;
+        }
+
+        label,
+        input,
+        textarea,
+        select {
+            width: 100%;
+            display: block;
+            line-height: 17px;      
+            @include inputText;
+            font-style: normal;
+        }
+
+        label {
+            border: none;
+            margin-bottom: 8px;
+            color:#011842;
+        }
+
+        textarea {
+            min-height: 103px;
+        }
+
+        input[type="file"] {
+            border: none;
+            border-radius: 0;                  
+        }
+
+        input[type="date"] {
+            cursor: pointer;
+        }
+
+        select {
+           @include selectArrow;
+           z-index: 999;
+        }
+
+        .fileUpload::-webkit-file-upload-button {
+            visibility: hidden;
+
+            &::after {
+                visibility: hidden;
+            }
+        }
+        
+        .fileUpload:before {
+            content: 'Attach File';
+            background: #CDF1FE;
+            border: 1px dashed $accent;
+            box-sizing: border-box;
+            border-radius: 15px;
+            color: $accent;
+            padding: 8px 20px;
+            cursor: pointer;
+            margin-right: -88px;
+            display: inline-block;                    
+            outline: none;
+            white-space: nowrap;                    
+            text-shadow: 1px 1px #fff;            
+            width: 116px;
+        }
+
+        .fileUpload:hover::before {
+            border: 1px dashed #aaa;
+            background: #026488;
+            transition: all 0.5s ease;             
+            text-shadow: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .attachedFileImage {
+            @include attachedImage;
+            padding: 5px;
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+
+        button {
+            position: absolute;
+            bottom: -95px;
+            right: 20px;
+        }
+    }
+
+    button {
+        position: absolute;
+        bottom: 25px;
+        right: 30px;
+        padding: 15px 65px;
+    }
+}

@@ -1,0 +1,257 @@
+// Typography
+$font-title: 'Roboto Slab', serif;
+$font-content : 'Montserrat', sans-serif;
+
+// Colors
+$primary : #FFFFFF;
+$secondary : #026488;
+$accent : #F1750E;
+
+// Border
+$border: 1px solid #011842;
+
+// Status Colors
+$pending: $accent;
+$declined: #CF0C0C;
+$approved: #048919;
+$text-color : #011842;
+
+
+$red: #CF0C0C;
+$green: #048919;
+
+// Table Data List Scrool
+@mixin list-scroll-webkit{
+
+    ::-webkit-scrollbar{
+        width: 20px;
+    }
+    ::-webkit-scrollbar-track{
+        background: $accent;
+        border-left: 9px solid white;
+        border-right: 9px solid white;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: $secondary;
+        border-left: 7px solid white;
+        border-right: 7px solid white;
+
+    }
+}
+
+// Button
+@mixin high-emphasize-button {
+    font-family: $font-title;
+    background: $accent;
+    color: $primary;
+    padding: 18px 32px;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+@mixin less-emphasize-button {
+    color: $accent;
+    background-color: #FCE3CF;
+    text-align: center;
+    // add for work schedule btn
+    border: none;
+    border-radius: 15px;
+}
+
+// Icon
+@mixin high-emphasize-icon {
+    font-size: 20px;
+    padding: 6px;
+    color: $primary;
+    border-radius: 4px;
+    background-color: $accent;
+}
+
+@mixin less-emphasize-icon {
+    color: $accent;
+    margin-left: 16px;
+    background-color: #FCE3CF;
+    width: 32px;
+}
+
+// Hover
+@mixin primary-hover {
+    transition: all 0.4s ease-in-out;
+    background-color: $secondary;
+    color: $primary;
+}
+
+@mixin text-anchor-hover {
+    color: $text-color;
+    text-decoration: none;
+    font-family: $font-content;
+    &:hover{
+        transition: all 0.4s ease-in-out;
+        color: $accent;
+    }
+}
+
+// Align horizontal in center
+@mixin horizontal-center {
+    display: flex;
+    align-items: center;
+}
+
+// Bread Crumbs Paragraph text
+@mixin bread-crumbs-text {
+    font-family: $font-title;
+    color: $text-color;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0;
+}
+
+// Card
+@mixin card {
+    box-shadow: 0px 4px 30px rgba($secondary, 0.2);
+    border-radius: 15px;
+    border: none;
+}
+
+@mixin card-dashboard-hover {
+    transition: all 0.4s ease-in-out;
+    margin-top: -8px;
+    box-shadow: 0px 4px 30px rgba(241, 117, 14, 0.3);
+}
+
+.header-navigation{
+    nav{
+        padding: 16px 60px;
+        .container-fluid{
+            padding: 0;
+        }
+    }
+}
+
+@mixin card-header {
+    font-family: $font-title;
+    color: $text-color;
+    padding: 18px 32px;
+    border-radius: 15px 15px 0 0;
+    border: none;
+    background: #F6F6F6;
+}
+@mixin card-body {
+    color: $text-color;
+    padding: 40px 32px;
+    border-radius: 15px 15px 0 0;
+    border: none;
+}
+@mixin card-footer {
+    border-radius: 0 0 15px 15px;
+    padding: 18px 32px;
+    border: none;
+    background: #F6F6F6;
+}
+@mixin textbox-input {
+    label{
+        font-family: $font-content;
+        font-size: 14px;
+        color: $text-color;
+        margin: 0;
+        padding-bottom: 8px;
+    }
+
+    input, textarea, select{
+        font-family: $font-content;
+        font-size: 14px;
+        color: $text-color;
+        border-radius: 15px;
+        padding: 6px 14px;
+        border-color: $text-color;
+    }
+
+    input:placeholder-shown{
+        font-style: italic;
+    }
+    ::placeholder {
+        font-family: $font-content;
+        color: #908B8B;
+    }
+}
+
+@mixin read-only {
+    background-color: #FEF5ED ;
+    color: #908B8B;
+    border:none;
+}
+
+// Table
+@mixin list-table-column-size{
+    .w-10{width: 10%;}
+    .w-20{width: 20%;}
+    .w-30{width: 30%;}
+    .w-40{width: 40%;}
+    .w-50{width: 50%;}
+    .w-60{width: 60%;}
+    .w-70{width: 70%;}
+    .w-80{width: 80%;}
+    .w-90{width: 90%;}
+    .w-100{width: 100%;}
+}
+
+@mixin list-table-content-frame {
+    overflow: auto;
+    height: 40vh;
+    margin-top: -15px;
+}
+@mixin list-table-th-td {
+    color: $text-color;
+    font-size: 16px;
+    border-color: $text-color;
+    border-bottom: 1px solid $text-color;
+    border-top: none;
+}
+
+@mixin list-text-status-table {
+    .pending{
+        color: #F1750E;
+    }
+    .approved{
+        color: #048919;
+    }
+    .declined{
+        color: #CF0C0C;
+    }
+}
+
+// Modal
+@mixin modal-header-footer {
+    background: #F6F6F6;
+    border: none;
+    padding: 18px 32px;
+}
+
+@mixin modal-title {
+    font-family: $font-title;
+    font-size: 16px;
+    color: $text-color;
+    margin: 0;
+}
+
+@mixin x-modal-btn {
+    background-color: transparent;
+    color: $accent;
+}
+
+// Modal Delete
+@mixin delete-warning-icon-modal {
+    font-size: 64px;
+    color: $accent;
+}
+
+@mixin delete-warning-text-modal {
+    padding: 32px 0;
+    font-family: $font-content;
+    font-size: 24px;
+    color: $text-color;
+
+}
+

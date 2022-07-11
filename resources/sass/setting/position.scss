@@ -1,0 +1,332 @@
+.section-position {
+    @include list-scroll-webkit;
+    ::placeholder {
+        font-family: $font-content;
+        color: #908B8B;
+    }
+    .breadcrumbs {
+        font-family: $font-title;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #011842;
+        line-height: 55px;
+    }
+    .positionAddBtn {
+        border-radius: 15px;
+        padding: 16px 32px;
+        font-family: $font-title;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        color: $primary;
+        background: $accent;
+    }
+    
+
+    .card {
+        margin-top: 2%;
+        box-shadow: 0px 4px 30px rgb(2 100 136 / 20%);
+        border-radius: 15px;
+        border: none;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: $primary;
+        background-clip: border-box;
+
+        .card-header {
+            font-family: "Roboto Slab", serif;
+            color: #011842;
+            font-size: 18px;
+            border: none;
+            background: #F6F6F6;
+            padding: 15px 30px;
+        }
+        
+        .card-body {
+            margin: 1.5% 0;
+            .body-content {
+                height: 100%;
+
+                .search-input {
+                    font-family: $font-content;
+                    padding: 5px 10px;
+                    height: auto;
+                    border-radius: 20px;
+                    font-size: 14px;
+                    border: 1px solid #C9C9C9;
+                    line-height: 20px;
+                    border: 1px solid #011842;
+                }
+                .search-input::placeholder-shown {
+                    font-style: italic;
+                }
+                ::placeholder{
+                    color: #908B8B;
+                }
+
+                .fixHeight {
+                    height: 35vh;
+                    overflow: auto;
+                    margin-top: 5%;
+                    .noRecords {
+                        font-family: $font-content;
+                        font-style: italic;
+                        opacity: 0.5;
+                    }
+                }
+
+                .table-size {
+                    .table-size-header {
+                        thead {
+                            border-top-style: hidden;
+                            min-width: 41.64rem;
+
+                            .thPosition {
+                                width: 475.33px;
+                            }
+                            th {
+                                border: none;
+                                position: sticky;
+                                top: 0;
+                                font-family: $font-title;
+                                font-size: 18px;
+                                font-weight: normal;
+                                color: #011842;
+                                border-bottom: 1px solid #011842;
+                                z-index: 1;
+                                background: $primary;
+                                padding: 10px
+                            }
+                        }
+                    }
+                
+                    .table-size-body {
+                        @include list-table-content-frame;
+                        height: 28.38vh;
+                        .position{
+                            width: 475.33px;
+                        }
+
+                        table {
+                            width: 100%;
+                            tbody {
+                                width: 100%;
+                                z-index: 0;
+                                td {
+                                    vertical-align: middle;
+                                    padding: 11px 12px;
+                                    border-bottom: 1px solid #011842;
+                                    font-size: 16px;
+                                    font-family: $font-content;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .search-input {
+                border: 1px solid #001A48;
+                border-radius: 24px;
+            }
+            .search-input:placeholder-shown {
+                font-style: italic;
+            }
+            #positionEdit {
+                width: 31.96px;
+                height: 32px;
+                background: $accent;
+                color: $primary;
+                border: none;
+                border-radius: 5px;
+                margin-right: 1rem;
+            }
+            #positionDelete {
+                @extend #positionEdit;
+                background: #FCE3CF;
+                color: $accent;
+                margin-right: 0;
+            }
+        
+        }
+        .card-footer {
+            background: #F6F6F6;
+            border: none;
+            padding: 50px 30px;
+        }
+    }
+
+    #positionAddModal {
+        .modal-content {
+            width: 750px;
+            height: 311px;
+            border-radius: 15px;
+            
+            .modal-header {
+                font-family: $font-title;
+                font-size: 16px;
+                color: #011842;
+                background: #F6F6F6;
+                border-radius: 15px 15px 0 0;
+            }
+    
+            .modal-body {
+                .section-add-position-modal{
+                    label {
+                        font-family: $font-content;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #011842;
+                    }
+                    #positionNameInputId {
+                        width: 686px;
+                        height: 30px;
+                        border-radius: 15px;
+                        font-family: $font-content;
+                        border: 1px solid #c9c9c9;
+                    }
+                    #positionNameInputId:placeholder-shown {
+                        font-style: italic;
+                    }
+                    ::placeholder {
+                        font-family: $font-content;
+                        color: #908B8B;
+                    }
+                }
+            }
+            .modal-footer {
+                #positionSaveBtn {
+                    width: 183px;
+                    height: 57px;
+                    background: $accent;
+                    border-radius: 15px;
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    #editPositionModal {
+        .modal-content {
+            width: 750px;
+            height: 311px;
+            border-radius: 15px;
+
+            .modal-header {
+                font-family: $font-title;
+                font-size: 16px;
+                color: #011842;
+                background: #F6F6F6;
+                border-radius: 15px 15px 0 0;
+            }
+
+            .modal-body {
+                .section-position-modal{
+                    label {
+                        font-family: $font-content;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #011842;
+                    }
+                    #positionInputNameModal {
+                        width: 686px;
+                        height: 30px;
+                        border-radius: 15px;
+                        font-style: italic;
+                    }
+                }
+            }
+
+            .modal-footer {
+                #positionUpdateBtn {
+                    width: 183px;
+                    height: 57px;
+                    background: $accent;
+                    border-radius: 15px;
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    #deletePositionModal {
+        .modal-content {
+            position: absolute;
+            width: 700px;
+            height: 471.58px;
+            border-radius: 15px;
+            
+            .warning-logo {
+                i {
+                    position: relative;
+                    font-size: 66px;
+                    left: 19.813rem;
+                    top: 5.718rem;
+                    color: $accent;
+                }
+            }
+
+            #positionDivNameModal {
+                position: relative;
+                font-family: $font-content;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 37px;
+                text-align: center;
+                top: 8.15rem;
+                left: 12.563rem;
+                color: #011842;
+                width: 18.625rem;
+
+                span {
+                    color: $accent;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                }
+            }
+
+            .deleteBtns {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                width: 272px;
+                height: 56px;
+                position: relative;
+                top: 10.215rem;
+                left: 14.375rem;
+
+                #positionDeleteBtn {
+                    padding: 18px 42px;
+                    position: relative;
+                    background: $accent;
+                    color: #fff;
+                    font-size: 16px;
+                    font-family: $font-content;
+                    font-weight: 500;
+                    line-height: 19.5px;
+                    margin: 0 10px;
+                    border-radius: 15px;
+                }
+
+                #positionCancelBtn {
+                    @extend #positionDeleteBtn;
+                    padding: 18px 28px;
+                    background: #FCE3CF;;
+                    color: $accent;
+                }
+            }
+            
+        }
+    }
+
+
+  }

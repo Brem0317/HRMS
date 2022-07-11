@@ -1,0 +1,129 @@
+.section-add-overtime{
+    // padding: 0 60px 48px;
+    .overtimeAddHeader{
+        // padding: 48px 0;
+        padding: 0 0 48px;
+        .overtimeAddBreadCrumbs{
+            @include horizontal-center;
+            p{
+                @include bread-crumbs-text;
+            }
+        }
+    }
+    .card{
+        @include card;
+        height: 100%;
+        .overtimeAddCardLeft{
+            padding-right: 0;
+        }
+        .overtimeAddCardRight{
+            padding-left: 0;
+        }
+        .card-header{
+            @include card-header;
+            border-radius: 15px 0 0 0;
+            height: 67px;
+            padding: 13px 32px;
+                
+            .overtime-title{
+                @include horizontal-center;
+            }
+            .col-md-6{
+                @include textbox-input;
+            }
+        }
+        .overtimeAddForm{
+            border-radius: 0 15px 0 0;
+            background-color: #CDF1FE;
+            @include horizontal-center;
+        }
+        
+        .card-body{
+            @include card-body;
+            @include textbox-input;
+            border-radius: 0;
+            table{
+                i{
+                    color: $primary;
+                    background-color: $accent;
+                    padding: 6px;
+                    border-radius: 4px;
+                    font-size: 26px;
+                }
+                .btn{
+                    padding: 0;
+                    i{
+                        &:hover{
+                            @include primary-hover;
+                        }
+                    }
+                }
+                th, td{
+                    @include list-table-th-td;
+                    vertical-align: middle;
+                }
+                th{
+                    font-family: $font-title;
+                }
+                td{
+                    font-family: $font-content;
+                    a{
+                        @include text-anchor-hover;
+                    }
+                }
+            }
+        }
+        .overtimeCardBodyBG{
+            background-color: #EFFAFE;
+            form{
+                .form-group{
+                    margin: 0;
+                    padding-bottom: 24px;
+                    textarea:placeholder-shown {
+                        font-style: italic;
+                    }
+                    ::placeholder {
+                        font-family: $font-content;
+                        color: #908B8B;
+                    }
+                    input, textarea, select{
+                        border: 1px solid #C9C9C9;
+                        background-color: transparent;
+                        resize: none;
+                    }
+                    .inputReadOnly{
+                        @include read-only;
+                    }
+                }
+                #fileUpload{
+                    padding-left: 0;
+                    padding-top: 24px;
+                    
+
+                }
+                
+                input[type=file]::file-selector-button {
+                    border: 1px dashed $accent;
+                    padding: 8px 20px;
+                    border-radius: 15px;
+                    background-color: #CDF1FE;
+                    color: $accent;
+                    cursor: pointer;
+                }
+                input[type=file]::file-selector-button:hover {
+                    @include primary-hover;
+                }
+
+                button{
+                    @include high-emphasize-button;
+                    float: right;
+                    margin-top: 24px;
+                    &:hover{
+                        @include primary-hover;
+                    }
+                }
+
+            }
+        }
+    }
+}

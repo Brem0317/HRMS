@@ -1,0 +1,333 @@
+// .section-employee-list{
+//     font-family: $font-title;
+//     padding: 0;
+//     margin: 0;
+//     font-size: 16px;
+//     color: #011842;
+//     // For Scroll Bar
+//     ::-webkit-scrollbar{
+//         width: 20px;
+//     }
+//     ::-webkit-scrollbar-track{
+//         background: $accent;
+//         border-left: 9px solid white;
+//         border-right: 9px solid white;
+        
+//     }
+//     ::-webkit-scrollbar-thumb{
+//         background: $secondary;
+//         border-left: 7px solid white;
+//         border-right: 7px solid white;
+//     }
+//     .breadcrumbs{
+//         margin-top: 20px;
+//         color: #011842;
+//         font-size: 18px;
+//     }
+//     .registerBtn{
+//         float: right;
+//         font-family: $font-title;
+//         background: $accent;
+//         color: $primary;
+//         padding: 18px 32px;
+//         border-radius: 15px;
+//         font-weight: 400;
+//         font-size: 16px;
+//         text-align: center;
+//         border: none;
+    
+//         &:hover{
+//             background-color: $secondary;
+//         }
+//     }
+
+//     .card{
+//         width: 100%;
+//         margin-top: 40px;
+//         box-shadow: 0px 4px 30px rgba(2, 100, 136, 0.2);
+//         border-radius: 15px;
+//         border: none;
+
+//         .card-header{
+//             padding: 18px 32px;
+//             border: none;
+//             border-radius: 15px 15px 0 0;
+//             color: #011842;
+
+//             h6{
+//                 font-family: $font-title;
+//                 margin: 0;
+//                 margin-top: 7px;
+//             }
+
+//             .searchBox{
+//                 padding: 0;
+
+//                 .employeeSearchClass{
+//                     padding: 0px;
+//                     margin: 0px;
+//                     width: 343px;
+//                     height: 31px;
+//                     border: 1px solid #011842;
+//                     box-sizing: border-box;
+//                     border-radius: 24px;
+//                     padding: 0 16px;
+//                 }
+//             }
+            
+
+           
+
+//             .print, .download{
+//                 padding: 0;
+                
+//                 i{
+//                     color: #68ABC3;
+//                     font-size: 20px;
+//                     padding: 6px;
+//                     height: 35px;
+    
+//                     &:hover{
+//                         color: $secondary;
+//                     }
+
+//                     ::before{
+//                         font-size: 50px;
+//                     }
+//                 }
+//             }
+//         }
+
+//         .card-body{
+//             padding: 48px 32px;
+           
+
+//             .tableFormFixHead{
+//                 height: 40vh;
+//                 overflow: auto;
+//                 overflow-x: hidden;
+//                 margin-top: 0;
+//                 background-color: white;
+//             }
+
+//             .filterByBody{
+//                 margin: 0;
+//                 .filterTitle{
+//                     margin: 7px 0 0 83px;
+//                     font-size: 14px;
+//                     font: $font-content;
+//                 }
+//                 .form-group{
+//                     margin: 0;
+//                     padding: 0;
+//                     padding-left: 32px;
+//                     margin-bottom: 32px;
+//                     font-family:$font-content;
+//                     width: 40%;
+//                 }
+//                 .form-control{
+//                     border-radius: 20px;
+//                     border:1px solid #c9c9c9;
+//                     height: 33px;
+//                     color: #767474;
+//                 }
+//             }
+
+//             table{
+//                 width: 100%;
+//             }
+//            th{
+//             border-top: none;
+//             color: #011842;
+//             font-family: $font-title;
+//             font-size: 16px;
+//             border-bottom: none;
+//             padding: 0 8px 16px 8px;
+//             vertical-align: middle;
+//             font-weight: normal;
+
+//             position: sticky;
+//             text-align: left;
+//             top: 0;
+//             z-index: 1;
+//             background-color: $primary;
+//            }
+
+//            td{
+//             vertical-align: middle;
+//             padding: 17px 8px;
+//             border-bottom: 1px solid #011842;
+//             border-top: 1px solid #011842;
+//             font-weight: normal;
+//             font-family: $font-content;
+//             font-size: 16px;
+//             color: #011842;
+
+//             a{
+//                 color: #011842;
+//                 text-decoration: none;
+
+//                 &:hover{
+//                     color: $accent;
+//                 }
+//             }
+
+//             .calendarBtn{
+//                 padding: 0;
+//                 margin: 0;
+//                 margin-right: 5px;
+
+//                 i{
+//                     background-color: $accent;
+//                     color: $primary;
+//                     font-size: 20px;
+//                     padding: 6px;
+//                     border-radius: 4px;
+//                     padding: 9px;
+    
+//                     &:hover{
+//                         background-color: $secondary;
+//                     }
+
+//                 }
+//             }
+
+//             .eyeBtn{
+//                 padding: 0;
+//                 margin-right: 5px;
+
+//                 i{
+//                     background-color: $primary;
+//                     color: $accent;
+//                     border: 2px solid $accent;
+//                     font-size: 20px;
+//                     padding: 6px;
+//                     border-radius: 4px;
+//                     padding: 7px 5px;
+    
+//                     &:hover{
+//                         background-color: $secondary;
+//                         color: $primary;
+//                         border: 2px solid $secondary;
+//                         padding: 7px 5px;
+//                     }
+//                 }
+//             }
+
+//             .penBtn{
+//                 padding: 0;
+
+//                 i{
+//                     background-color: #fce3cf;
+//                     color: $accent;
+//                     font-size: 20px;
+//                     padding: 6px;
+//                     border-radius: 4px;
+//                     padding: 9px 7px;
+    
+//                     &:hover{
+//                         background-color: $secondary;
+//                         color: $primary;
+//                     }
+//                 }
+//             }  
+//         }
+         
+
+
+            
+
+           
+
+        
+            
+//         }
+//     }
+
+// }
+@include list-table-column-size;
+.section-employee-list{
+    // padding: 0 60px 48px;
+    .overtimeListHeader{
+        // padding: 48px 0;
+        padding:0 0 48px;
+        .overtimeListBreadCrumbs{
+            @include horizontal-center;
+            p{
+                @include bread-crumbs-text;
+            }
+        }
+        .col-md-6{
+            .addOvertimeBtn{
+                @include high-emphasize-button;
+                &:hover{
+                    @include primary-hover;
+                }
+            }
+        }
+    }
+
+    .card{
+        @include card;
+        .card-header{
+            @include card-header;
+            .overtime-title{
+                @include horizontal-center;
+            }
+            .col-md-6{
+                @include textbox-input;
+            }
+        }
+        .card-body{
+            padding: 0;
+            @include card-body;
+            @include textbox-input;
+            @include list-scroll-webkit;
+            .overtime-list-header{
+                thead{
+                    border-bottom: 1px solid $text-color;
+                    th{
+                        font-family: $font-title;
+                        background-color: $primary;
+                        @include list-table-th-td;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .overtime-list-content{
+                @include list-table-content-frame;
+                table{
+                    i{
+                        color: $primary;
+                        background-color: $accent;
+                        padding: 6px;
+                        border-radius: 4px;
+                        font-size: 26px;
+                    }
+                    .btn{
+                        padding: 0;
+                        i{
+                            &:hover{
+                                @include primary-hover;
+                            }
+                        }
+                    }
+                    th, td{
+                        @include list-table-th-td;
+                        vertical-align: middle;
+                    }
+                    th{
+                        font-family: $font-title;
+                    }
+                    td{
+                        font-family: $font-content;
+                        a{
+                            @include text-anchor-hover;
+                        }
+                    }
+                    @include list-text-status-table;
+                }
+            }
+        }
+    }
+}

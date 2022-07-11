@@ -1,0 +1,218 @@
+.section-civil-service-add {
+    .breadcrumbs {
+        font-family: $font-title;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #011842;
+        line-height: 55px;
+
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .card {
+        background: $primary;
+        box-shadow: 0px 4px 30px rgba(2, 100, 136, 0.2);
+        border-radius: 15px;
+        width: 100%;
+        border: none;
+        overflow: hidden;
+        height: 695px;
+
+        .card-header {
+            height: 52px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background: #F6F6F6;
+            color: #8C8C8C;
+            border: none;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+
+
+            .section-card-nav {
+                height: 52px;
+                font-family: $font-content;
+                .col-md-1 {
+                    height: 52px;
+                    a {
+                        margin-top: 9px;
+                        font-size: 14px;
+                        height: 42px !important;
+                        width: 124px;
+                    }
+                }
+            }
+            .active {
+                color: $accent;
+                border-bottom: 2px solid $accent;
+                border-radius: 0;
+            }
+        }
+
+        .card-body {
+            padding: 40px 32px;
+            height: 560px;
+            overflow: auto;
+
+            .attachFile::-webkit-file-upload-button {
+                visibility: hidden;
+
+                ::after {
+                    visibility: hidden;
+                }
+            }
+
+            .attachFile:before {
+                content: 'Attach File';
+                background: #CDF1FE;
+                border: 1px dashed $accent;
+                box-sizing: border-box;
+                border-radius: 15px;
+                font-size: 14px;
+                font-family: $font-content;
+                color: $accent;
+                padding: 8px 20px;
+                cursor: pointer;
+                margin-right: -88px;
+                display: inline-block;                    
+                outline: none;
+                white-space: nowrap;                    
+                text-shadow: 1px 1px #fff;            
+                width: 116px;
+                margin-top: 54px;
+            }
+    
+            .col-md-12{
+                padding: 0;
+                .non-prof {
+                    border-bottom: 2px solid $accent;
+                    label {
+                        font-size: 18px;
+                        font-family: $font-title;
+                        color: #011842;
+                    }
+                }
+    
+                .first-row {
+                    display: flex;
+                    flex-direction: row;
+                    
+                    .col-md-7 {
+                        padding: 0;
+                        padding-top: 32px;
+                        font-size: 14px;
+                        font-family: $font-content;
+                        margin-right: 44px;
+                        
+                        label {
+                            color: #011842;
+                        }
+                        input, select {
+                            width: 100%;
+                            height: 30px;
+                            border-radius: 15px;
+                            padding: 7px 14px 6px;
+                            border: 1px solid #C9C9C9;
+                        }
+                        .categoryId {
+                            width: 842.88px;
+                        }
+                    }
+                    
+                    .col-md-2 {
+                        padding: 0;
+                        padding-top: 32px;
+                        font-size: 14px;
+                        font-family: $font-content;
+                        margin-right: 44px;
+                        
+                        label {
+                            color: #011842;
+                        }
+                        input, select {
+                            width: 100%;
+                            height: 30px;
+                            border-radius: 15px;
+                            padding: 7px 14px 6px;
+                            border: 1px solid #C9C9C9;
+                        }
+                        .input-size {
+                            width: 251.66px;
+                        }
+                    }
+                }
+
+                .second-row {
+                    display: flex;
+                    flex-direction: row;
+
+                    .non-second-div {
+                        padding: 0;
+                        padding-top: 32px;
+                        font-size: 14px;
+                        font-family: $font-content;
+                        margin-right: 44px;
+                        width: 548.27px;
+                        
+                        input {
+                            width: 548.27px;
+                            height: 30px;
+                            border-radius: 15px;
+                            padding: 7px 14px 6px;
+                            border: 1px solid #C9C9C9;
+                        }
+                    }
+
+                    .row-second-2 {
+                        padding: 0;
+                        padding-top: 32px;
+                        font-size: 14px;
+                        font-family: $font-content;
+                        margin-right: 32px;
+                        width: 251.66px;
+                        
+                        label {
+                            color: #011842;
+                        }
+                        input, select {
+                            width: 251.66px;
+                            height: 30px;
+                            border-radius: 15px;
+                            padding: 7px 14px 6px;
+                            border: 1px solid #C9C9C9;
+                        }
+                    }
+                }
+
+                .prof-div {
+                    margin-top: 38px;
+                    .prof {
+                        @extend .non-prof;
+                    }
+                }
+            }
+        }
+
+        .card-footer {
+            height: 93px;
+            border: none;
+            padding-right: 32px;
+            
+            .next-btn {
+                width: 94px;
+                height: 56px;
+                padding: 18px 28px;
+                border-radius: 15px;
+                background: $accent;
+                color: $primary;
+                float: right;
+            }
+        }
+    }
+
+}

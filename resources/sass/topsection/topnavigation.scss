@@ -1,0 +1,89 @@
+.companyBrand {
+    font-family: $font-title;
+    color: #011842;
+    text-transform: uppercase;
+    
+    img {
+        padding-right: 15px;
+        max-width: 70px;
+    }
+}
+
+.guestLoginBtn {
+    background: #026488;
+    border-radius: 15px;
+    padding: 18px 32px !important;
+    color: #fff !important;
+    font-weight: 500;
+    font-family: $font-title;
+
+    i {
+        margin-right: 10px;
+    }
+
+    &:hover {
+        background: $accent;
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+}
+
+.userName {
+    color: #026488;
+    font-family: $font-title;
+    margin-right: 10px;
+}
+
+.userAvatar {
+    
+    img {
+        width: 45px;
+        height: 45px;
+        border-radius: 25px;
+        border: 1px solid #011842;
+    }
+} 
+
+.userDropdown {
+    border-radius: 15px;
+    color: #026488;
+    font-family: $font-title;
+    padding: 55px 35px;
+    text-align: center;
+    background: #FDFDFD;
+    box-shadow: 0px 4px 30px rgba(1, 24, 66, 0.2);
+    border: none;
+    margin-top: 23px;
+
+    span {
+        display: block;
+        margin-bottom: 15px;
+
+        &:nth-child(2) {
+            margin-right: 0;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+        }
+    }
+
+    a {
+        margin-top: 50px;
+        border-radius: 15px;
+        background: #FCE3CF;
+        padding: 18px 98px;
+        font-weight: 500;
+        color: #011842;
+        
+        &:hover {
+            background: $accent;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+    }
+
+}

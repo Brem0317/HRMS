@@ -1,0 +1,250 @@
+.section-add-absent-late{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #011842;
+
+    //For Scroll
+    ::-webkit-scrollbar{
+        width: 20px;
+    }
+    ::-webkit-scrollbar-track{
+        background: $accent;
+        border-left: 9px solid white;
+        border-right: 9px solid white;
+        
+    }
+    ::-webkit-scrollbar-thumb{
+        background: $secondary;
+        border-left: 7px solid white;
+        border-right: 7px solid white;
+        
+    }
+
+     // For Search
+     input{
+        font-family: $font-content;
+        font-size: 16px;
+        color: #011842;
+        border-radius: 15px;
+        padding: 8px 16px;
+    }
+    input:placeholder-shown {
+        font-style: normal;
+    }
+    ::placeholder {
+        padding: 0px;
+        font-family: $font-title; 
+        color: #908B8B;
+    }
+
+    p.breadcrumbs{
+        @include bread-crumbs-text;
+        margin-bottom: 60px;
+    }
+
+    .card{
+        @include card;
+       
+        .absentLateLeft{
+            padding-right: 0;
+
+            .employeeList{
+                border-radius: 13px 0 0 0;
+                height: 67px;
+                padding: 18px 32px;
+                border-bottom: none;
+
+                .absentLateTitle{
+                    font-family: $font-title;
+                    margin-top: 4px;
+                    margin-top: 6px;
+                    font-family: $font-title;
+                }
+
+                input{
+                    font-size: 14px;
+                    color: #011842;
+                    border-radius: 15px;
+                    padding: 8px 16px;
+                }
+                input:placeholder-shown {
+                    font-style: italic;
+                }
+                ::placeholder {
+                    padding: 0px;
+                    font-family: $font-content; 
+                    color: #908B8B;
+                }
+                
+                
+                .absentLateSearchClass {
+                    padding: 0px;
+                    margin: 0px;
+                    width: 343px;
+                    height: 31px;
+                    border: 1px solid #011842;
+                    box-sizing: border-box;
+                    border-radius: 24px;
+                    padding: 0 16px;
+                    margin-top: 3px;
+                }
+            }
+
+            .employeeListBody{
+                padding: 40px 32px;
+                height: 500px;
+               
+
+                .tableFormFixHead{
+                    height: 40vh;
+                    overflow: auto;
+                    margin-top: 0;
+                    background-color: white;
+                }
+
+                th{
+                    border-top: none;
+                    border-bottom: none;
+                    color: #011842;
+                    font-weight: normal;
+                    padding: 0 8px 16px 8px;
+                    vertical-align: middle;
+
+                    position: sticky;
+                    top: 0;
+                    z-index: 1;
+                    background-color: $primary;
+                    border-top: none;
+                }
+
+                td{
+                    vertical-align: middle;
+                    border-top: 1px solid #011842;
+                    border-bottom: 1px solid #011842;
+                    padding: 16px 8px;
+                    font-family: $font-content;
+                }
+
+                a{
+                    padding: 0;
+
+                    i{
+                        background-color: $accent;
+                        color: $primary;
+                        font-size: 20px;
+                        padding: 6px;
+                        border-radius: 4px;
+            
+                        &:hover{
+                            @include primary-hover;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .absentLateRight{
+            padding-left: 0;
+
+            .absentLateForm{
+                border-radius:  0 13px 0 0;
+                height: 67px;
+                padding: 13px 32px;
+                border-bottom: none;
+                background-color: #cdf1fe;
+
+                .absentLateFormTitle{
+                    font-family: $font-title;
+                    margin-top: 9px;
+                    font-family: $font-title;
+                }
+            }
+
+            .card-body{
+                padding: 40px 32px;
+                background-color: #effafe;
+                height:500px ;
+                font-family: $font-content;
+
+                .form-group{
+                    margin: 0;
+                    padding: 0;
+                    margin-bottom: 32px;
+                    font-family:$font-content;
+
+                    label{
+                        margin-bottom: 8px;
+                        font-family: $font-content;
+                        font-size: 14px;
+                        font-weight: normal;
+                    }
+
+                    .form-control{
+                        font-family: $font-content;
+                        border-radius: 20px;
+                        height: 35px;
+                        background-color: #effafe;
+                        border: 1px solid #c9c9c9;
+                        color: #011842;
+                    }
+
+                    ::placeholder {
+                        padding: 0px;
+                        font-family: $font-content; 
+                        color: #908B8B;
+                    }
+                }
+
+                label{
+                    margin-bottom: 8px;
+                    font-family: $font-content;
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+
+                textarea{
+                    background-color: #effafe;
+                    border-radius: 15px;
+                    border: 1px solid #c9c9c9;
+                    margin-bottom: 20px;
+                    font-family: $font-content;
+                    color: #011842;
+                    height: 132px;
+                }
+                ::placeholder {
+                    padding: 0px;
+                    font-family: $font-content; 
+                    color: #908B8B;
+                }
+
+
+                .absentLateSubmit{
+                    margin-top: 18px;
+                    float:right;
+                    font-family: $font-title;
+                    background: $accent;
+                    color: $primary;
+                    padding: 18px 32px;
+                    border-radius: 15px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    text-align: center;
+
+                    &:hover{
+                        background-color: $secondary;
+                        
+                    }
+                    
+                }
+                
+    
+                
+
+            }
+        }
+
+
+    }
+}

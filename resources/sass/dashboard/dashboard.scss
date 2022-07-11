@@ -1,0 +1,99 @@
+.section-dashboard {
+    font-family:$font-content;
+    .vaxcard {
+        text-align: center;
+        
+        .card-body {
+            border-bottom: none !important;
+
+            i {
+                position: relative !important;
+                left: 0 !important;
+                top: 0 !important;
+                margin-bottom: 10px;
+            }
+
+            .card-text {
+                text-align: center !important;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                margin-top: 40px;
+
+                li {
+                    border-bottom: 2px solid #F1750E;
+                    text-align: justify;
+                    font-size: 20px;
+                    line-height: 24px;
+                    padding-bottom: 10px;
+                    margin-bottom: 25px;
+                    color: #026488;
+
+                    &:last-child {
+                        border: none;
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                    }
+
+                    span {
+                        float: right;
+                        font-size: 32px;
+                        font-weight: 500;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .singlecard {
+        margin-bottom: 30px;
+
+        .card {
+            a {
+                padding: 40px;
+            }
+
+            border: none;
+            box-shadow: 0px 4px 30px rgba(2, 100, 136, 0.2);
+            border-radius: 15px;
+
+            &:hover{
+                @include card-dashboard-hover;
+            }
+        }
+
+        .card-body {
+            border-bottom: 2px solid #F1750E;
+            padding: 0;
+            padding-bottom: 15px;
+            
+            i {
+                font-size: 45px;                      
+                position: absolute;
+                left: 40px;
+                top: 40px;
+                color: #F1750E;
+            }
+            
+            .card-text {
+                text-align: right;
+                color: #026488;
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            .count {              
+                font-size: 60px;
+                line-height: 73px;
+                font-weight: 500;
+                display: block;
+                margin-top: -17px;
+            }
+        }
+    }
+    
+}

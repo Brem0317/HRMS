@@ -1,0 +1,226 @@
+.mainContent {
+    padding-left: 0;
+    .section-list-undertime {
+        
+        
+        .breadcrumbs {
+            font-family: $font-title;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #011842;
+            line-height: 55px;
+    
+            p {
+                margin-top: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    
+        .addUndertimeBtn {
+            border-radius: 15px;
+            padding: 16px 32px;
+            font-family: $font-title;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            color: $primary;
+            background: $accent;
+        }
+    
+        .card {
+            margin-top: 2%;
+            box-shadow: 0px 4px 30px rgb(2 100 136 / 20%);
+            border-radius: 15px;
+            border: none;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: $primary;
+            background-clip: border-box;
+    
+            .card-header {
+                font-family: $font-title;
+                color: #011842;
+                font-size: 18px;
+                border: none;
+                background: #F6F6F6;
+                padding: 15px 30px;
+    
+                .col-md-6 {
+                    align-self: center;
+                }
+    
+                .search-input {
+                    font-family: $font-content;
+                    padding: 5px 10px;
+                    height: auto;
+                    border-radius: 20px;
+                    font-size: 14px;
+                    border: 1px solid #C9C9C9;
+                    line-height: 20px;
+                    border: 1px solid #011842;
+                    width: 345px;
+                }
+                .search-input:placeholder-shown {
+                    font-style: italic;
+                }
+                ::placeholder {
+                    color: #908B8B;
+                }
+            }
+    
+            .card-body {
+                padding: 20px;
+                overflow: auto;
+                
+                .undertime-list {
+                    margin-bottom: 0;
+                }
+
+                .fixHeight {
+                    margin: 0;
+                    width: 100%;
+                    padding: 30px;
+                    height: 45vh;
+                    margin-bottom: 5%;
+                }
+                .noRecords {
+                    font-family: $font-content;
+                    font-style: italic;
+                    opacity: 0.5;
+                }
+    
+                table {
+                    width: 100%;
+                    thead {
+                        border-top-style: hidden;
+                        font-family: $font-title;
+
+                        font-size: 16px;
+                        color: #011842;
+                        
+                        tr {
+                            th {
+                                font-weight: 400;
+                                border-bottom: 1px solid #011842;
+                                padding: 12px 0;
+                            }
+                        }
+    
+                        .thEmployeeNumber {
+                            width: 175px;
+                        }
+                        .thName {
+                            width: 240px;
+                        }
+                        .thDprmt {
+                            width: 265px;
+                        }
+                        .thDateFiled {
+                            width: 105px;
+                        }
+                        .thApprovedBy {
+                            width: 250px;
+                            padding-left: 11px;
+                        }
+                        .thAction {
+                            width: 125px;
+                        }
+                    }
+
+    
+
+                    tbody {
+                        font-family: $font-content;
+                        font-size: 16px;
+                        color: #011842;
+                        tr {
+                            td {
+                                padding: 11px;
+                                border-bottom: 1px solid #011842;
+                            }
+    
+                            .tdEmployeeNumber {
+                                width: 175px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                padding: 0;
+                            }
+                            .tdName {
+                                width: 240px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                padding: 0;
+                            }
+                            .tdDprmt {
+                                width: 265px;
+                                padding: 0;
+                            }
+                            .tdDateFiled {
+                                width: 105px;
+                                padding: 0;
+                            }
+                            .tdApprovedBy {
+                                width: 250px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                padding: 0;
+                                padding-left: 11px;
+                            }
+                            .tdApprovedByBlnk {
+                                width: 250px;
+                                padding: 0;
+                                padding-left: 11px;
+                            }
+                            .tdStatus {
+                                padding: 0;           
+                                padding-left: 3px;               
+                            }
+                            .tdAction {
+                                width: 125px;
+                            }
+                            .pendingClass {
+                                color: $pending;
+                            }
+                            .approvedClass {
+                                color: $approved;
+                            }
+                            .disapprovedClass {
+                                color: $declined;
+                            }
+    
+                            .formEditBtn {
+                                width: 32px;
+                                height: 32px;
+                                background: $accent;
+                                border: none;
+                                border-radius: 5px;
+                                margin-right: 1rem;
+                                margin-left: -15px;
+    
+                                button {
+                                    position: relative;
+                                    height: 100%;
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+    
+                                    i {
+                                        position: relative;
+                                        color: $primary;
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

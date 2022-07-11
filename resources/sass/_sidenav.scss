@@ -1,0 +1,71 @@
+// sidenav
+.sideNav {
+    padding-right: 0;
+    background: #026488;
+    height: 100vh;
+    overflow: hidden;
+
+    .navDate {
+        padding: 10% 30px;
+
+        span {
+            color: #fff;
+            display: block;
+            width: 100%;
+            font-size: 40px;
+            line-height: 55px;
+
+            &:last-child {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .navTime {
+        position: absolute;
+        color: $primary;
+        right: 18px;
+        bottom: 19px;
+        z-index: 2;
+        display: none;
+    }
+
+    .navigation {
+        padding: 10% 0;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                font-family: $font-content;
+                font-size: 16px;
+                line-height: 20px;
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: #fff;
+                    padding: 26px 30px; 
+                    
+                    &:hover,
+                    &.active {
+                        background: $accent;
+                    }
+                    i {
+                        padding-right: 15px;
+                        background: none;
+                        vertical-align: sub;
+                        font-size: 26px;
+                    }
+                }
+                &:last-child {
+                    width: 95.6%;
+                    position: absolute;
+                    bottom: 0;
+
+                }            
+
+            }
+        }
+    }
+}

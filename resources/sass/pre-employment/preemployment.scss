@@ -1,0 +1,90 @@
+.section-pre-employment-add{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #011842;
+
+    .breadcrumbs{
+        @include bread-crumbs-text;
+        margin-bottom: 60px;
+    }
+
+    .card{
+        @include card;
+
+        .card-body{
+            padding: 40px 32px;
+            border: none;
+            border-radius: 15px;
+
+            .form-group-file{
+                padding: 0 69px 32px 0;
+
+                div{
+               padding-bottom: 16px;
+                }
+                .labelAttachBtn{
+                    border: 1px dashed $accent;
+                    padding: 8px 20px;
+                    border-radius: 15px;
+                    background-color: #CDF1FE;
+                    color: $accent;
+                    cursor: pointer;
+                    &:hover{
+                        @include primary-hover;
+                    }
+                }
+                .fileAttach{
+                    width: 55%;
+                    padding: 8px 0;
+                        &::before{
+                            content: 'Attach File';
+                            border: 1px dashed $accent;
+                            padding: 8px 20px;
+                            border-radius: 15px;
+                            background-color: #CDF1FE;
+                            color: $accent;
+                            display: none;
+                        }
+                }
+                input[type=file]::file-selector-button {
+                    display: none;
+                }
+                input[type=file]::file-selector-button:hover {
+                    @include primary-hover;
+                }
+            }
+        }
+
+        .card-footer{
+            padding: 18px 32px;
+            border-radius: 0 0 15px 15px  ;
+            border: none;
+
+            .btn-primary{
+                margin-left: 67vw;
+                font-family: $font-content;
+                background: $accent;
+                color: $primary;
+                padding: 18px 64px;
+                border-radius: 15px;
+                font-weight: 400;
+                font-size: 16px;
+                text-align: center;
+                border: none;
+    
+                &:hover{
+                    @include primary-hover;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+}

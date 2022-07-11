@@ -1,0 +1,72 @@
+.section-character-reference-add{
+    .breadCrumb{
+        @include bread-crumbs-text;
+    }
+    .card{
+        @include card;
+        .card-header{
+            @include card-header;
+        }
+        .card-body{
+            @include card-body;
+            button{
+                @include high-emphasize-button;
+                &:hover{
+                    @include primary-hover;
+                }
+            }
+            form{
+                table{
+                    margin-top:48px;
+                    th, td{
+                        @include list-table-th-td;
+                        vertical-align: middle;
+                    }
+                    td{
+                        font-family: $font-content;
+                        .btn{
+                            padding: 0;
+                            background-color: transparent;
+                            i{
+                                @include high-emphasize-icon;
+                                &:hover{
+                                    @include primary-hover;
+                                }
+                            }
+                            .deleteListBtn{
+                                @include less-emphasize-icon;
+                                &:hover{
+                                    @include primary-hover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .card-footer{
+            @include card-footer;
+            button{
+                @include high-emphasize-button;
+                &:hover{
+                    @include primary-hover;
+                }
+            }
+        }
+    }
+}
+
+#characterReferenceModal{
+    .modal-header{
+       @include modal-header-footer;
+       h5{
+           @include modal-title;
+       }
+    }
+    .modal-body{
+        @include card-body;
+        .section-add-reference-modal{
+            padding: 4px 16px;
+        }
+    }
+}

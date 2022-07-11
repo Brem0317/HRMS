@@ -1,0 +1,188 @@
+.section-official-business{
+    font-family: $font-title;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #011842;
+
+    ::-webkit-scrollbar{
+        width: 20px;
+    }
+    ::-webkit-scrollbar-track{
+        background: $accent;
+        border-left: 9px solid white;
+        border-right: 9px solid white;
+        
+    }
+    ::-webkit-scrollbar-thumb{
+        background: $secondary;
+        border-left: 7px solid white;
+        border-right: 7px solid white;
+        
+    }
+
+    input{
+        font-family: $font-content;
+        font-size: 16px;
+        color: #011842;
+        border-radius: 15px;
+        padding: 8px 16px;
+    }
+    input:placeholder-shown {
+        font-style: italic;
+    }
+    ::placeholder {
+        padding: 0px;
+        font-family: $font-content; 
+        color: #908B8B;
+    }
+
+    .breadcrumbs{
+        margin-top: 20px;
+        color: #011842;
+        font-size: 18px;
+    }
+
+    .addOfficialButton{
+        float: right;
+        font-family: $font-title;
+        background: $accent;
+        color: $primary;
+        padding: 18px 32px;
+        border-radius: 15px;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+    
+
+        &:hover{
+            background-color: $secondary;
+            
+        }
+    }
+  
+    .card{
+        font-weight: bold;
+        width: 100%;
+        margin-top: 40px;
+        box-shadow: 0px 4px 30px rgba(2, 100, 136, 0.2);
+        border-radius: 15px;
+        border: none;
+
+        .card-header{
+            float:left;
+                padding: 18px 32px;
+                border: none;
+                border-radius: 15px 15px 0 0;
+                color: #011842;
+    
+                h6{
+                    font-family: $font-title;
+                    margin: 0;
+                    margin-top: 7px;
+                }
+    
+                input.form-control.obSearchClass {
+                    padding: 0px;
+                    margin: 0px;
+                    width: 343px;
+                    height: 31px;
+                    border: 1px solid #011842;
+                    box-sizing: border-box;
+                    border-radius: 24px;
+                    padding: 0 16px;
+               }
+        }
+
+            
+        .card-body{
+            padding: 48px 32px;
+
+            .tableFormFixHead{
+                height: 40vh;
+                overflow: auto;
+                margin-top: 0;
+                background-color: white;
+              
+            }
+        
+            th{
+                .w-10{width: 10%;}
+                .w-15{width: 15%;}
+                .w-20{width: 20%;}
+
+                border-top: none;
+                color: #011842;
+                font-family: $font-title;
+                font-size: 16px;
+                border-bottom: none;
+                padding: 0 8px 16px 8px;
+                vertical-align: middle;
+                font-weight: normal;
+
+                position: sticky;
+                text-align: left;
+                top: 0;
+                z-index: 1;
+                background-color: $primary;
+                
+            }
+            
+            td{
+                vertical-align: middle;
+                padding: 17px 8px;
+                border-bottom: 1px solid #011842;
+                border-top: 1px solid #011842;
+                font-weight: normal;
+                font-family: $font-content;
+                font-size: 16px;
+                color: #011842;
+
+                a{
+                    color: #011842;
+                    text-decoration: none;
+
+                    &:hover{
+                        color: $accent;
+                    }
+                }
+            }
+
+
+            i{
+                background-color: $accent;
+                color: $primary;
+                font-size: 20px;
+                padding: 6px;
+                border-radius: 4px;
+
+                &:hover{
+                    background-color: $secondary;
+                }
+            }
+
+            .btn{
+                padding: 0;
+
+            }
+
+            .pending {
+                color: $accent;
+            }
+            .approved {
+                font-weight: 500px;
+                color: #048919;
+            }
+            .declined {
+                color: #CF0C0C;
+            }
+        
+        }
+
+
+    }
+
+
+
+
+}

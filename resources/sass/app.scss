@@ -1,0 +1,99 @@
+// Fonts
+    //Montserrat
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    // Roboto Slab
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+// Variables
+@import 'variables';
+// Reset
+@import 'reset.scss';
+// Mixin
+@import 'mixin.scss';
+// Modal
+@import 'modal.scss';
+// Side Navigation
+@import 'sidenav.scss';
+// Section
+@import 'section.scss';
+// Footer
+@import 'footer.scss';
+// Department
+@import './setting/department.scss';
+// Leave
+@import './employee/leave.scss';
+// Status
+@import './setting/status.scss';
+// Work Schedule
+@import './setting/workschedule.scss';
+@import './setting/company.scss';
+// Logs
+@import './setting/logs.scss';
+// Official Business
+@import './officialbusiness/officialbusinesslist.scss';
+@import './officialbusiness/officialbusinessadd.scss';
+@import './officialbusiness/officialbusinessedit.scss';
+// Overtime
+@import './overtime/list.scss';
+@import './overtime/add.scss';
+@import './overtime/edit.scss';
+// Setting Position
+@import './setting/position';
+// Roles
+@import './setting/roles.scss';
+@import './setting/setting.scss';
+// Undertime
+@import './employee/undertime/list.scss';
+@import './employee/undertime/add.scss';
+@import './employee/undertime/edit.scss';
+// Job Title
+@import './setting/jobtitle.scss';
+// Add User
+@import './setting/adduser.scss';
+// Top Section
+@import './topsection/topnavigation.scss';
+//Landing page
+@import 'landing.scss';
+// Absent / Late
+@import './absentlate/list.scss';
+@import './absentlate/add.scss';
+@import './absentlate/edit.scss';
+// Card Navigation
+@import 'cardnav.scss';
+// Card Nav
+@import './employee/cardnav/card-nav.scss';
+// Employee - Benefits
+@import './benefits/employeebenefit.scss';
+// Card Nav
+@import './employee/cardnav/card-nav.scss';
+@import './employee/character-reference/character-reference.scss';
+@import './employee/awardandinfraction/awardandinfraction.scss';
+// Family Information
+@import './employee/familyinformation/family-information-add.scss';
+// employee
+@import './employee/othertraining/otherTraining.scss';
+// Employee
+@import './employee/information/employeeAdd.scss';
+// Card Navigation
+@import 'cardnav.scss';
+//Employee Medical Information
+@import './employee/medicalinformation/medicalinformation.scss';
+// Civi Service
+@import './employee/civilservice/civil-service-add.scss';
+// Pre-Employment
+@import './pre-employment/preemployment.scss';
+//Employee List
+@import './employee/employee-list/employeelist.scss';
+// Employee Questionaire
+@import './employee/questionaire.scss';
+// Work-experience
+@import './employee/workexperience/workexperience.scss';
+// dashboard home
+@import './dashboard/dashboard.scss';
+// dashboard pending approvals
+@import './dashboard/pendingapprovals.scss';
+// dashboard employee vaccination list
+@import './dashboard/vaccination.scss';
+// dashboard expired professional licenses
+@import './dashboard/expiredlicense.scss';

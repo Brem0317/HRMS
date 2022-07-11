@@ -1,0 +1,146 @@
+.section-edit-official-business{
+    font-family: $font-title;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #011842;
+
+    .breadcrumbs{
+        margin: 0;
+        color: #011842;
+        font-size: 18px;
+    }
+    .card{
+        font-weight: bold;
+        width: 100%;
+        margin-top: 40px;
+        box-shadow: 0px 4px 30px rgba(2, 100, 136, 0.2);
+        border-radius: 16px;
+        border: none;
+
+        .card-header{
+            font-weight: normal;
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+            border: none;
+            padding: 18px 32px;
+        }
+
+        .card-body{
+            padding: 48px 32px;
+            border: none;
+            border-radius: 15px;
+
+            textarea{
+                color: #011842;
+            }
+            
+            .form-group{
+                margin: 0;
+                padding: 0;
+                margin-bottom: 32px;
+                font-family:$font-content;
+
+                label{
+                    margin-bottom: 8px;
+                    font-family: $font-content;
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+
+                .form-control{
+                    background-color: #FEF5ED;
+                    border-radius: 20px;
+                    height: 33px;
+                    border:1px solid #FEF5ED;
+                    color: #011842;
+
+                }
+                .form-control.approvedBy, .status{
+                    border:1px solid #c9c9c9;
+                    background-color: $primary;
+                }
+                
+            }
+
+
+            label{
+                font-family: $font-content;
+                font-weight: normal;
+                font-size: 14px;
+
+            }
+            textarea{
+                height: 129px;
+                background-color: #FEF5ED;
+                border-radius: 15px;
+                border: 1px solid #FEF5ED;
+                margin-bottom: 31px;
+                font-family: $font-content;
+            }
+            
+            
+            .form-group-file{
+                .labelAttachBtn{
+                    border: 1px dashed $accent;
+                    padding: 8px 20px;
+                    border-radius: 15px;
+                    background-color: #CDF1FE;
+                    color: $accent;
+                    cursor: pointer;
+                    &:hover{
+                        @include primary-hover;
+                    }
+                }
+                .fileAttach{
+                    width: 55%;
+                    padding: 8px 0;
+                        &::before{
+                            content: 'Attach File';
+                            border: 1px dashed $accent;
+                            padding: 8px 20px;
+                            border-radius: 15px;
+                            background-color: #CDF1FE;
+                            color: $accent;
+                            display: none;
+                        }
+                }
+                input[type=file]::file-selector-button {
+                    display: none;
+                }
+                input[type=file]::file-selector-button:hover {
+                    @include primary-hover;
+                }
+            }
+        }
+
+        .card-footer{
+            padding: 18px 32px;
+            border-radius: 0 0 15px 15px  ;
+            border: none;
+
+            #UpdateObBtn{
+            float: right;
+            font-family: $font-title;
+            background: $accent;
+            color: $primary;
+            padding: 18px 64px;
+            border-radius: 15px;
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+            border: none;
+
+            &:hover{
+                background-color: $secondary;
+
+            }
+            
+            }
+        }
+
+    }
+
+ 
+
+}

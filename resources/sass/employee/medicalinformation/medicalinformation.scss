@@ -1,0 +1,158 @@
+.section-medical-information-add {
+
+    .card-header {
+        padding: 0 !important;
+    }
+
+    .fixHeight {
+        margin: 2% 0;
+    }
+
+    form {
+        color: #011842;
+        font-size: 16px;
+        line-height: 30px;
+        font-family: $font-content;
+
+        h5 {
+            font-family: $font-title;
+            font-size: 18px;
+            line-height: 24px;
+            border-bottom: 2px solid #F1750E;
+            width: 100%;
+            float: left;
+            padding: 10px 0;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .footerBtn {
+            position: absolute;
+            right: 15px;
+            bottom: -125px;
+        }
+
+        .sectionContent {
+            margin-bottom: 40px;
+            
+            .modalAddBtn {
+                float: right;
+                margin-bottom: -30px;
+                position: relative;
+                z-index: 2;
+            }
+
+            input[type="file"] {
+                width: 100%;
+                display: block;
+                line-height: 17px;      
+                @include inputText;
+                font-style: normal;
+                border: none;
+                border-radius: 0;
+            }
+
+            .fileUpload::-webkit-file-upload-button {
+                visibility: hidden;
+    
+                &::after {
+                    visibility: hidden;
+                }
+            }
+            
+            .fileUpload:before {
+                content: 'Attach File';
+                background: #CDF1FE;
+                border: 1px dashed $accent;
+                box-sizing: border-box;
+                border-radius: 15px;
+                color: $accent;
+                padding: 8px 20px;
+                cursor: pointer;
+                margin-right: -88px;
+                display: inline-block;                    
+                outline: none;
+                white-space: nowrap;                    
+                text-shadow: 1px 1px #fff;            
+                width: 116px;
+            }
+
+            .fileUpload:hover::before {
+                border: 1px dashed #aaa;
+                background: #026488;
+                transition: all 0.5s ease;             
+                text-shadow: none;
+                color: #fff;
+                font-weight: bold;
+            }
+
+            .attachmentDiv {
+                display: inline-block;
+                width: 33%;
+                padding: 0 30px;
+                font-size: 14px;
+                margin-bottom: 32px;
+            }
+
+            table {
+
+                th {
+                    font-size: 16px;
+                }
+            
+                tr {
+
+                    td {
+                        width: 30%;
+
+                        &:last-child {
+                            width: 8%;
+                        }
+                    }  
+                }
+                
+                &.boosterShotList {
+                    
+                    tr {
+    
+                        &:first-child {
+                            
+                            td {
+                                border-top: none;
+                            }
+                        }                    
+                    }
+                }
+            }
+        } 
+    }
+}
+
+#vaccinationModal {
+    
+    h5 {
+        font-size: 16px;
+        margin: 25px 0;
+    }
+
+    .modal-header h5 {
+        margin: 0;
+    }
+
+    .section {
+        width: 45%;
+        display: inline-block;
+
+        &:last-child {
+            width: 50%;
+            margin-left: 15px;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    
+    .modal-dialog {
+        max-width: 685px;
+    }
+}

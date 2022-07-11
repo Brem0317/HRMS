@@ -1,0 +1,138 @@
+.section-edit-absent-late{
+    font-family: $font-title;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #011842;
+
+    p.breadcrumbs{
+        @include bread-crumbs-text;
+        margin-bottom: 60px;
+    }
+
+    .card{
+        @include card;
+
+        .card-header{
+            padding: 18px 32px;
+            border: none;
+            border-radius: 15px 15px 0 0;
+            background-color: #f6f6f6;
+        }
+
+        .card-body{
+            padding: 48px 32px;
+            border: none;
+
+            .form-group{
+                margin: 0;
+                padding: 0;
+                margin-bottom: 32px;
+                font-family:$font-content;
+
+                label{
+                    margin-bottom: 8px;
+                    font-family: $font-content;
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+    
+                .form-control{
+                    background-color: #FEF5ED;
+                    border-radius: 20px;
+                    height: 35px;
+                    border:1px solid #FEF5ED;
+                    color: #011842;
+    
+                }
+    
+                .status, .approvedBy, .applyFor {
+                    border:1px solid #c9c9c9;
+                    background-color: $primary;
+                }
+            }
+
+            label{
+                font-family: $font-content;
+                font-weight: normal;
+                font-size: 14px;
+
+            }
+            textarea{
+                height: 132px;
+                background-color: #FEF5ED;
+                border-radius: 15px;
+                border: 1px solid #FEF5ED;
+                margin-bottom: 32px;
+                font-family: $font-content;
+            }
+
+            span{
+                font-weight: bold;
+            }
+
+            //For Attachment
+            .form-group-file{
+                .labelAttachment{
+                    border: 1px dashed $accent;
+                    padding: 8px 20px;
+                    border-radius: 15px;
+                    background-color: #CDF1FE;
+                    color: $accent;
+                    cursor: pointer;
+                    &:hover{
+                        @include primary-hover;
+                    }
+                }
+                .fileAttachment{
+                    width: 55%;
+                    padding: 8px 0;
+                        &::before{
+                            content: 'Attach File';
+                            border: 1px dashed $accent;
+                            padding: 8px 20px;
+                            border-radius: 15px;
+                            background-color: #CDF1FE;
+                            color: $accent;
+                            display: none;
+                        }
+                }
+                input[type=file]::file-selector-button {
+                    display: none;
+                }
+                input[type=file]::file-selector-button:hover {
+                    @include primary-hover;
+                }
+            }
+
+        }
+
+        .card-footer{
+            padding: 18px 32px;
+            border-radius: 0 0 15px 15px  ;
+            border: none;
+
+            #updateAbsentLateBtn{
+                float: right;
+                font-family: $font-title;
+                background: $accent;
+                color: $primary;
+                padding: 18px 64px;
+                border-radius: 15px;
+                font-weight: 400;
+                font-size: 16px;
+                text-align: center;
+                border: none;
+
+                &:hover{
+                    background-color: $secondary;
+    
+                }
+            }
+
+        }
+
+        
+
+    }
+}

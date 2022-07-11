@@ -1,0 +1,103 @@
+//status
+section {
+
+    .breadcrumbs {
+        font-family: $font-title;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #011842;
+        line-height: 55px;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .card {        
+        margin-top: 2%;
+        box-shadow: 0px 4px 30px rgb(2 100 136 / 20%);
+        border-radius: 15px;
+        border: none;
+        
+        .card-header {
+            font-family: $font-title;
+            color: #011842;
+            font-size: 16px;
+            border: none;
+            background: #F6F6F6;
+            padding: 15px 30px;
+        }
+
+        .card-body {
+            margin: 0;
+        }
+
+        .card-footer {
+            background: #F6F6F6;
+            border: none;
+            padding: 50px 30px;
+        }
+
+    }    
+
+    .search-input {
+        font-family: $font-content;
+        padding: 5px 10px;
+        height: auto;
+        @include inputText;        
+        border: $border;
+
+        &:hover,
+        &:focus {        
+            border: $border;
+        }
+    }
+
+    .sectionAddBtn {
+        border-radius: 15px;
+        padding: 16px 32px;
+        font-family: $font-title;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        @include genBttn;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    .fixHeight {
+        height: 35vh;
+        overflow: auto;
+        margin-top: 5%;
+        
+        &::-webkit-scrollbar {
+            width: 20px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: $accent;
+            border-left: 9px solid white;
+            border-right: 9px solid white;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $secondary;
+            border-left: 7px solid white;
+            border-right: 7px solid white;
+        }
+    
+    }
+    
+    table {
+        width: 100%;
+        thead {
+            @include tableHeader;
+            border-bottom: $border;
+        }
+
+        tbody {            
+            @include tableData;
+        }
+    }
+}

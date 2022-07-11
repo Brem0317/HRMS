@@ -1,0 +1,162 @@
+.award-and-infraction-add{
+    .breadCrumb{
+        @include bread-crumbs-text;
+    }
+    .card{
+        @include card;
+        .card-header{
+            @include card-header;
+        }
+        .card-body{
+            @include card-body;
+            .div-bottom-line{
+                border-bottom: 2px solid $accent;
+                padding: 16px 0;
+                h3{
+                    @include bread-crumbs-text;
+                    position: absolute;
+                    bottom: 0;
+                }
+                button{
+                    @include high-emphasize-button;
+                    &:hover{
+                        @include primary-hover;
+                    }
+                }
+            }
+            form{
+                table{
+                    margin-top:16px;
+                    th, td{
+                        @include list-table-th-td;
+                        vertical-align: middle;
+                    }
+                    td{
+                        font-family: $font-content;
+                        .btn{
+                            padding: 0;
+                            background-color: transparent;
+                            i{
+                                @include high-emphasize-icon;
+                                &:hover{
+                                    @include primary-hover;
+                                }
+                            }
+                            .deleteListBtn{
+                                @include less-emphasize-icon;
+                                &:hover{
+                                    @include primary-hover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .card-footer{
+            @include card-footer;
+            button{
+                @include high-emphasize-button;
+                &:hover{
+                    @include primary-hover;
+                }
+            }
+        }
+    }
+}
+
+#awardModal{
+    .modal-header{
+       @include modal-header-footer;
+       h5{
+           @include modal-title;
+       }
+    }
+    .modal-body{
+        @include card-body;
+        .section-add-awardinfraction-modal{
+            padding: 4px 0;
+            .form-group-file{
+                padding-top: 16px;
+                .labelAttachBtn{
+                    border: 1px dashed $accent;
+                    padding: 8px 20px;
+                    border-radius: 15px;
+                    background-color: #CDF1FE;
+                    color: $accent;
+                    cursor: pointer;
+                    &:hover{
+                        @include primary-hover;
+                    }
+                }
+                .fileAttach{
+                    width: 55%;
+                    padding: 8px 0;
+                        &::before{
+                            content: 'Attach File';
+                            border: 1px dashed $accent;
+                            padding: 8px 20px;
+                            border-radius: 15px;
+                            background-color: #CDF1FE;
+                            color: $accent;
+                            display: none;
+                        }
+                }
+                input[type=file]::file-selector-button {
+                    display: none;
+                }
+                input[type=file]::file-selector-button:hover {
+                    @include primary-hover;
+                }
+            }
+        }
+    }
+}
+
+#infractionModal{
+    .modal-header{
+       @include modal-header-footer;
+       h5{
+           @include modal-title;
+       }
+    }
+    .modal-body{
+        @include card-body;
+        .section-add-awardinfraction-modal{
+            padding: 4px 0;
+            .form-group-file{
+                padding-top: 16px;
+                .labelAttachBtn{
+                    border: 1px dashed $accent;
+                    padding: 8px 20px;
+                    border-radius: 15px;
+                    background-color: #CDF1FE;
+                    color: $accent;
+                    cursor: pointer;
+                    &:hover{
+                        @include primary-hover;
+                    }
+                }
+                .fileAttach{
+                    width: 55%;
+                    padding: 8px 0;
+                        &::before{
+                            content: 'Attach File';
+                            border: 1px dashed $accent;
+                            padding: 8px 20px;
+                            border-radius: 15px;
+                            background-color: #CDF1FE;
+                            color: $accent;
+                            display: none;
+                        }
+                }
+                input[type=file]::file-selector-button {
+                    display: none;
+                }
+                input[type=file]::file-selector-button:hover {
+                    @include primary-hover;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.section-civil-service-add{
+    font-family: $font-title;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #011842;
+
+    .breadcrumbs{
+        @include bread-crumbs-text;
+        margin-bottom: 60px;
+    }
+
+    .card{
+        @include card;
+
+        .card-body{
+            padding: 48px 32px;
+            border: none;
+            .form-group{
+                margin: 0;
+                padding: 0;
+                margin-bottom: 32px;
+                font-family:$font-content;
+                width: 252px;
+                margin-right: 38px;
+        
+                label{
+                    margin-bottom: 8px;
+                    font-family: $font-content;
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+        
+                .form-control{
+                    background-color: $primary;
+                    border-radius: 20px;
+                    height: 35px;
+                    border:1px solid #c9c9c9;
+                    color: #011842;
+        
+                }
+
+                ::placeholder{
+                    color:#c9c9c9;
+                    font-style: italic;
+                }
+            }
+
+        }
+        .card-footer{
+            background-color: #f6f6f6;
+            padding: 18px 32px;
+            border-radius: 0 0 15px 15px ;
+            border: none;
+
+            .btn-primary{
+                float: right;
+                font-family: $font-content;
+                background: $accent;
+                color: $primary;
+                padding: 18px 28px;
+                border-radius: 15px;
+                font-weight: 400;
+                font-size: 16px;
+                text-align: center;
+                border: none;
+    
+                &:hover{
+                    @include primary-hover;
+                }
+            }
+        
+        }
+        
+        
+    }
+
+}

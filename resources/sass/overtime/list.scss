@@ -1,0 +1,86 @@
+@include list-table-column-size;
+.section-overtime{
+    // padding: 0 60px 48px;
+    .overtimeListHeader{
+        // padding: 48px 0;
+        padding:0 0 48px;
+        .overtimeListBreadCrumbs{
+            @include horizontal-center;
+            p{
+                @include bread-crumbs-text;
+            }
+        }
+        .col-md-6{
+            .addOvertimeBtn{
+                @include high-emphasize-button;
+                &:hover{
+                    @include primary-hover;
+                }
+            }
+        }
+    }
+
+    .card{
+        @include card;
+        .card-header{
+            @include card-header;
+            .overtime-title{
+                @include horizontal-center;
+            }
+            .col-md-6{
+                @include textbox-input;
+            }
+        }
+        .card-body{
+            padding: 0;
+            @include card-body;
+            @include textbox-input;
+            @include list-scroll-webkit;
+            .overtime-list-header{
+                thead{
+                    border-bottom: 1px solid $text-color;
+                    th{
+                        font-family: $font-title;
+                        background-color: $primary;
+                        @include list-table-th-td;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .overtime-list-content{
+                @include list-table-content-frame;
+                table{
+                    i{
+                        color: $primary;
+                        background-color: $accent;
+                        padding: 6px;
+                        border-radius: 4px;
+                        font-size: 26px;
+                    }
+                    .btn{
+                        padding: 0;
+                        i{
+                            &:hover{
+                                @include primary-hover;
+                            }
+                        }
+                    }
+                    th, td{
+                        @include list-table-th-td;
+                        vertical-align: middle;
+                    }
+                    th{
+                        font-family: $font-title;
+                    }
+                    td{
+                        font-family: $font-content;
+                        a{
+                            @include text-anchor-hover;
+                        }
+                    }
+                    @include list-text-status-table;
+                }
+            }
+        }
+    }
+}

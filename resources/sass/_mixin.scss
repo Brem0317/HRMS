@@ -1,0 +1,98 @@
+
+
+@mixin bttnHover {
+    background: $secondary;
+    transition: all 0.5s ease;
+}
+
+@mixin genBttn {
+    color: $primary;
+    background: $accent;
+    
+    &:hover {        
+        @include bttnHover;
+    }
+}
+
+@mixin genBttnLight {
+    background: $accent;
+    color: $primary;
+    
+    &:hover {
+        @include bttnHover;    
+    }
+}
+
+@mixin inputText {
+    border-radius: 20px;
+    font-size: 14px;
+    font-style: italic;
+    border: 1px solid #C9C9C9;
+    color: #908B8B;
+    line-height: 20px;
+
+    &:focus {
+        font-style: normal;
+        color: #011842;
+    }
+}
+
+@mixin tableHeader {
+    tr {
+        th {
+            border: none;       
+            position: -webkit-sticky;
+            position: sticky;              
+            top: -30px;
+            font-family: $font-title;
+            color: #011842;
+            font-size: 16px;
+            font-weight: normal;            
+            border-bottom: $border;
+            background-color: #fff;
+            padding: 10px;
+        }
+    }
+}
+
+@mixin tableData {
+    tr {
+        td {
+            vertical-align: middle;
+            border-top: $border;
+            font-family: $font-content;
+            font-size: 16px;
+            line-height: 20px;
+            color:#011842;
+            padding: 10px;
+            
+            button {
+                padding: 0 !important;                                       
+
+                i {
+                    @include genBttn;
+                    border-radius: 5px;
+                    padding: 7px;
+                }
+                
+                &:last-child i {
+                    color: #F1750E;
+                    background: #FCE3CF;
+                    margin-left: 5px;
+                    font-size: 16px;
+
+                    &:hover {
+                        color: #fff;
+                        @include bttnHover;
+                    }
+                } 
+            }     
+        }
+
+        &:last-child {
+            td {                
+                border-bottom: 1px solid #011842;
+            }
+        }
+    }
+}

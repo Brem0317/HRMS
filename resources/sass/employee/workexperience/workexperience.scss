@@ -1,0 +1,281 @@
+.section-work-experience-add {
+    @include list-scroll-webkit;
+    .breadcrumbs {
+        font-family: Roboto Slab;
+        font-weight: 400;
+        font-size: 18px;
+        color: #011842;
+    }
+    .card{
+        border-radius: 15px;
+        .card-body{
+            height: 536px;
+            padding: 23px 21px 23px 44px;
+
+            .label-div {
+                label {
+                    padding: 40px 0 0;
+                    font-family: $font-title;
+                    font-size: 18px;
+                    color: #011842;
+                    font-weight: 400;
+                    margin-bottom: 9px;
+                    width: 100%;
+                    border-bottom: 2px solid $accent;
+                }
+            }
+
+            .div-table-header {
+                .table-header {
+                    margin-top: 23px;
+                    margin-bottom: 0;
+                    th {
+                        border-top: none;
+                        border-bottom: 1px solid #011842;
+                        padding: 0 0 17px 11px;
+                        font-family: $font-title;
+                        font-weight: 400;
+                        color: #011842;
+                        vertical-align: middle;
+                    }
+                    .th-startdate {
+                        width: 125px;
+                    }
+                    .th-enddate {
+                        width: 145px;
+                    }
+                    .th-position {
+                        width: 190px;
+                    }
+                    .th-agency {
+                        width: 175px;
+                    }
+                    .th-monthly {
+                        width: 120px;
+                    }
+                    .th-salarygrade {
+                        width: 90px;
+                    }
+                    .th-status {
+                        width: 120px;
+                    }
+                    .th-government {
+                        width: 135px;
+                    }
+                    .th-attach {
+                        width: 155px;
+                    }
+                    .th-action {
+                        width: 153px;
+                    }
+                }
+            }
+            .div-table-body {
+                height: 330px;
+                overflow: auto;
+                .table-data {
+                    td {
+                        border-top: none;
+                        padding-bottom: 17px;
+                        border-bottom: 1px solid #011842;
+                        vertical-align: middle;
+                        font-family: $font-content;
+                        font-size: 16px;
+                        font-weight: 400;
+    
+                        .editBtn {
+                            width: 32px;    
+                            height: 32px;
+                            background: $accent;
+                            color: $primary;
+                            border: none;
+                            border-radius: 5px;
+                        }
+                        .deleteBtn {
+                            @extend .editBtn;
+                            background-color: #FCE3CF;
+                            color: rgba(241, 117, 14, 0.8);;
+                            margin-left: 9px;
+                        }
+                    }
+                    .td-startdate {
+                        width: 125px;
+                    }
+                    .td-enddate {
+                        width: 145px;
+                    }
+                    .td-position {
+                        width: 190px;
+                    }
+                    .td-agency {
+                        width: 175px;
+                    }
+                    .td-monthly {
+                        width: 120px;
+                    }
+                    .td-salarygrade {
+                        width: 90px;
+                    }
+                    .td-status {
+                        width: 120px;
+                    }
+                    .td-government {
+                        width: 135px;
+                    }
+                    .td-attach {
+                        width: 155px;
+                    }
+                    .td-action {
+                        width: 130px;
+                    }
+                }
+            }
+
+            .btn-add {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 18px 32px;
+                position: absolute;
+                width: 95px;
+                height: 57px;
+                background: $accent;
+                border-radius: 15px;
+                left: 1397.06px;
+                top: 98px;
+                font-family: $font-title;
+                font-weight: 500;
+                color: $primary;
+            }
+        }
+
+        .card-footer {
+            height: 93px;
+            .btn-next {
+                float: right;
+                padding: 18px 28px;
+                border-radius: 15px;
+                color: #fff;
+                background: $accent;
+                font-weight: 500;
+                font-family: $font-content;
+            }
+        }
+    }
+}
+
+
+// Modals
+.modal-content {
+    width: 750px;
+    
+    .modal-body {
+        width: 750px;
+
+        .modalContent {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 250px;
+            padding-top: 50px;
+
+            #warningIcon {
+                font-size: 66px;
+                color: $accent;
+                margin-bottom: 30px;
+            }            
+        }
+        
+        #modalContent {
+            
+            .warningLabel {
+                font-size: 24px;
+                color: #011842;
+                font-family: 'Montserrat';
+                width: 349px;
+            }
+
+        }
+        .first-row {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 32px;
+            .first-input-div {
+                width: 50%;
+                input {
+                    width: 100%;
+                    border: 1px solid #C9C9C9;
+                    height: 30px;
+                }
+            }
+            .second-input-div {
+                margin-left: 28px;
+                @extend .first-input-div;
+            }
+        }
+
+        .second-row {
+            @extend .first-row;
+            .agency-div {
+                width: 100%;
+                input {
+                    width: 100%;
+                    border: 1px solid #C9C9C9;
+                    height: 30px;
+                }
+            }
+        }
+
+        .third-row {
+            @extend .first-row;
+        }
+
+        .fourth-row {
+            @extend .first-row;
+        }
+
+        .fifth-row {
+            @extend .first-row;
+
+            #attachDiv {
+                display: flex;
+                width: 315px;
+                align-items: center;
+
+                #cancelAttach {
+                    color: $declined;
+                    cursor: pointer;
+                    display: none;
+                }
+            }
+            .attachFile::-webkit-file-upload-button {
+                visibility: hidden;
+                padding-top: 24px;
+
+                ::after {
+                    visibility: hidden;
+                }
+            }
+            .attachFile:before {
+                content: 'Attach File';
+                background: #CDF1FE;
+                border: 1px dashed $accent;
+                box-sizing: border-box;
+                border-radius: 15px;
+                font-size: 14px;
+                font-family: $font-content;
+                color: $accent;
+                padding: 3px 20px;
+                cursor: pointer;
+                margin-right: -88px;
+                display: inline-block;                    
+                outline: none;
+                white-space: nowrap;                    
+                text-shadow: 1px 1px #fff;            
+                width: 116px;
+                height: 32px;
+            }
+        }
+    }
+}

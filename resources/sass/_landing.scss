@@ -1,0 +1,131 @@
+.welcomepage {
+    max-width: 1210px;
+}
+
+.landing {
+    text-align: center;
+
+    img,
+    p {
+        margin: auto;
+        display: block;
+        text-transform: uppercase;
+    }
+
+    img {
+        max-width: 365px;
+    }
+
+    p {
+        font-size: 24px;
+        line-height: 30px;
+        font-family: $font-content;
+        color: #011842;
+        margin-top: 16px;
+        margin-bottom: 48px;
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+
+.systemName {
+    text-align: center;
+
+    h1 {
+        color: #011842;
+        font-family: $font-title;
+        font-size: 64px;
+        line-height: 84px;
+        border-top: 8px solid #F1750E;
+        border-bottom: 8px solid #F1750E;
+    }
+}
+
+.loginPage {
+    padding-bottom: 5%;
+
+    .col-md-8 {
+        max-width: 625px;
+    }
+
+    .landing {
+        
+        img {
+            max-width: 150px;
+        }
+        
+        p {
+            margin-bottom: 40px;
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+
+    .systemName {
+        margin-bottom: 48px;
+        
+        h1 {
+            font-size: 32px;
+            line-height: 42px;
+            margin: 0;
+        }
+    }
+
+    .card {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 40px rgba(2, 100, 136, 0.2);
+        border-radius: 15px;
+        border: none;
+
+        .card-body {
+            padding: 3.75rem;
+        }
+    }
+
+    form {
+        font-family: $font-content;
+
+        input {
+            border: 2px solid $accent;
+            border-radius: 15px;
+            padding: 1.125rem 1.313rem;
+            font-style: italic;
+            color: #8c8c8c;
+            font-size: 0.9rem;
+
+            &:focus,
+            &:active {
+                font-style: normal;
+                color: #011842;
+            }
+        }
+
+        button {
+            border-radius: 15px;
+            padding: 0.6rem;
+            background: #026488;
+            font-family: $font-title;
+            border: none;
+
+            &:hover {
+                background: $accent;
+                transition: all 0.5s ease;
+            }
+        }
+        
+        label,
+        input,
+        button {
+            display: block;
+            width: 100%;
+        }
+        
+        .form-group {
+            margin-bottom: 2rem;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+}

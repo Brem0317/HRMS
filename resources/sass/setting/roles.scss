@@ -1,0 +1,119 @@
+.section-roles-list{
+    font-family: $font-title;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #011842;
+  
+
+    ::-webkit-scrollbar{
+        width: 20px;
+    }
+
+    ::-webkit-scrollbar-track{
+        background: $accent;
+        border-left: 9px solid white;
+        border-right: 9px solid white;        
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background: $secondary;
+        border-left: 7px solid white;
+        border-right: 7px solid white;               
+    }
+
+    .breadcrumbs{
+        margin: 0px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .card{
+        width: 100%;
+        margin-top: 40px;
+        box-shadow: 0px 4px 30px rgba(2, 100, 136, 0.2);
+        border-radius: 15px;
+        border: none;
+
+        .card-header{
+            padding: 18px 32px;
+            border-radius: 15px 15px 0 0;
+            border: none;
+            background-color: #f6f6f6;
+        }
+
+        .card-body{
+            padding: 40px 32px;
+           
+            .form-control.search-input.roleSearchClass{
+                padding: 0;
+                margin: 0;
+                border: 1px solid #011842;
+                box-sizing: border-box;
+                border-radius: 24px;
+                padding: 5px 10px;
+                height: 31px;
+            }
+
+            input{
+                font-family: $font-content;
+                font-size: 14px;
+                color: #011842;
+                border-radius: 15px;
+                padding: 5px 10px;
+            }
+
+            input:placeholder-shown{
+                font-style: italic;
+            }
+            
+            ::placeholder {
+                font-family: $font-content;
+                color: #908B8B;
+            }
+
+            .tableFormFixHead{
+                height: 40vh;
+                overflow: auto;
+                margin-top: 5%;
+                background-color: white;
+              
+            }
+
+            .table-header {
+                padding: 0px 8px 16px 8px;
+                font-weight: bold;
+                font-size: 16px;
+                position: sticky;
+                top: 0;
+                z-index: 1;
+                background-color: $primary;
+            }
+
+            td {
+                padding: 16px;
+                border-top: 1px solid #011842;
+                background: $primary;
+                font-family: $font-content;
+                color: #011842;
+                font-size: 16px;
+                border-bottom: 1px solid #011842;
+                vertical-align: middle;
+            }
+
+            .noRecords{
+                text-align: center;
+            }
+
+        }
+
+        .card-footer{
+            padding: 32px 32px;
+            border: none;
+            border-radius: 0 0 15px 15px;
+            background-color: #f6f6f6;
+        }
+    }
+
+}
+

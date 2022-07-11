@@ -1,0 +1,88 @@
+.section-vaccination-list {
+
+    .red {
+        color: $red;
+    }
+
+    .green {
+        color: $green;
+    }
+
+    .card {
+        width: 100%;
+
+        &:last-child {
+            margin-bottom: 5%;
+        }
+        
+
+        .inputSearch {
+            position: absolute;
+            top: 10px;
+            right: 30px;
+            width: 345px;
+        }
+
+        .fixHeight {
+            width: 100%;
+            margin-top: 0;
+            padding: 30px;
+            height: 50vh;
+
+            table {
+                td {
+                    line-height: 35px;
+                }
+
+                td.pending {
+                    color: #F1750E;
+                }
+
+                td:last-child a {
+                    color: #FFFFFF;
+                    background: #F1750E;
+                    padding: 7px;
+                    border-radius: 5px;
+                }
+
+            }
+
+        }
+
+    }
+
+    .vaccinationlistcounter {
+
+        ul {
+            list-style: none;
+            text-align: right;
+            padding: 0;
+            line-height: 54px;
+
+            li {
+                display: inline;
+                border-right: 1px solid #011842;
+                font-size: 16px;
+                line-height: 21px;
+                font-family: $font-title;
+                color: #011842;
+                padding-right: 7px;
+                margin-right: 5px;
+
+                span {
+                    color: $green;
+                }
+                
+                &:nth-child(3) span,
+                &:nth-child(4) span {
+                    color: $red;
+                }
+
+                &:last-child {
+                    border: none;
+                }
+            }            
+        }
+    }
+
+}
